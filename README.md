@@ -1,3 +1,26 @@
+# Historia de Usuario1
+___
+###Titulo:
+*Ver información por primera vez sobre la serie. *
+___
+**Yo como:** Usuario no conocedor de la serie
+**Quiero:** Saber de qué trata (conocer personajes de la serie)
+**Para:** Decidir si darme la oportunidad de iniciar a ver la serie.
+
+----------------
+
+#Criterios de aceptación 
+___
+**Escenario:** Navegación en la web. pag principal
+*Dado que:* El usuario quiere obtener información rápida del show
+*Cuando:*  Ingresa al inicio de la web
+*Entonces:* Se  generará un pop-up con información básica. Resumen de que va la serie, para todo el que ingrese.
+
+#Definición de terminado 1 - DefinitionOfDone
+___
+
+El usuario ve la información básica de Rick y Morty al ingresar a la página
+
 # Data Lovers
 
 ## Índice
