@@ -21,6 +21,36 @@ ___
 
 El usuario ve la información básica de Rick y Morty al ingresar a la página
 
+# Historia de usuario 2
+**Titulo:** *Conocer personajes de un lugar especifico*
+___
+
+
+**Yo como:** Usuario que ha visto pocos capítulos
+**Quiero:** Saber los personajes que viven en la tierra
+**Para:** Recordar escenas de manera fácil, e incentivarme a seguir con las temporadas faltantes.
+
+#Criterios de aceptación 
+___
+
+**Escenario:** Navegación en la tabla de filtros
+**Dado que:** El usuario quiere reforzar su conocimiento del show
+
+**Cuando:** Ingrese a la web.
+*Entonces:* se mostrará una tabla de filtrado donde aparecerá su búsqueda
+
+**Cuando:** haga click en "personajes de la tierra".
+*Entonces:* se mostrará una lista de personajes.
+
+**Cuando:** haga click en algún personaje.
+*Entonces:* aparecerá información del personaje en una especie de card amigable de visualizar.
+
+#Definición de terminado 2 -DefinitionOfDone
+___
+
+Usuario puede interactuar y verificar rápidamente los personajes de su interes por filtrado. Y recibio la informacion necesaria para determinar si continua o no la serie.
+
+
 # Data Lovers
 
 ## Índice
