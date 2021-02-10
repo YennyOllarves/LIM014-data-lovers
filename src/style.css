@@ -5,23 +5,21 @@ body {
     background-image: url(picture/fondo1.png);
     background-position: center center;
     background-size: cover;
-    
     text-align: center;
-    
-   
-    
 }
 .logo {
-    /*padding: 17% 30% 0% 30%;*/
-    margin-top:100px ;
-    margin-bottom: 100px;
+    margin: 100px 200px;
 }
 .modal {
     position:relative;  
-    background: rgba(164, 177, 231, 0.5);
     transition: all 500ms ease;
     opacity: 5;
     visibility: hidden;
+    z-index: 1;
+    left: 25%;
+    top: -250px;
+    width: 200px;
+    height: 200px;
 }
 #btn-modal:checked ~ .modal{
     opacity: 1;
@@ -61,17 +59,12 @@ body {
     background: black;
     border: 5px white;
     border-style: outset;
-    box-shadow: 10px 20px 10px white;
+    box-shadow: 10px 10px 10px white;
     padding: 10px 15px;
     border-radius: 4px;
     cursor: pointer;
     
 }
-.boton-2{
-    position: relative;
-
-}
-
 .article{
     background-image: url(picture/hola.png);
     /*background-size: 100vw 100vh;
@@ -85,11 +78,33 @@ body {
 .probar{
     text-align: center;
 }
+.boton2{
+    position:relative ;
+    z-index: 1;
+    left: 540px;
+    top: 350px;
+    width: 300px;
+    height: 200px;
+}
 .tamaño{
-    margin-top: 50px;
-    margin-bottom: 200px;
+    margin-top: -100px;
+    margin-bottom: 100px;
     width: 500px;
     height: 500px;
+}
+.search-form{
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.menuci{
+    flex-wrap: wrap;
+}
+.menu{
+    float: left;
+    margin-top: 30px;
+    margin-left: 20px;
+
 }
    
 /*figure {

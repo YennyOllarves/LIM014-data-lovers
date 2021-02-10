@@ -3,14 +3,12 @@
 //export const example = () => {
   //return 'example';
 //};
-<<<<<<< HEAD
 
 //export const anotherExample = () => {
   //return 'OMG';
 //};
 
 
-=======
 
 //export const anotherExample = () => {
   //return 'OMG';
@@ -35,4 +33,3 @@ export const order = (datos) => {
 })
 return ordenar
 }
->>>>>>> 9b21d582f304bfbb7456caa94554b4a3af7e81d8
