@@ -8,15 +8,30 @@
   </head>
   <body>
     <header class='background-header'>
-      <div class='menuci'>
-        <button class='menu'>Buscar</button>
+      <section class='flex-top-header'>
+        <nav id="MenuNav" class="menu">
+          <ul>
+            <li> <a href="#" title="Menu 2">Menú <span>^</span></a>
+            
+              <ul>
+                <li> <a href="#" title="SubMenu 1">SubMenú 1</a> </li>
+                <li> <a href="#" title="SubMenu 2">SubMenú 2</a> </li>
+                <li class="ultimo"> <a href="#" title="SubMenu 3">SubMenú 3</a> </li>
+              </ul>
+            </li>	
+            </li>	
+          </ul>
+        </nav>
         <form class="search-form">
           <input type="text" name="text" placeholder="Buscar">
           <button>Buscar</button>
           </form> 
-      </div>
-      <!--<div class="background-header">-->
-      <img class='logo' src="picture/logo.png">
+      </section>
+      <br>
+        <section class="alinear">
+          <img class='logo flex-logo' src="picture/logo.png">
+        </section>
+      
       
       <input type="checkbox" id="btn-modal">
       <br>
@@ -33,7 +48,7 @@
     </header>
 
     <div class=boton2>
-      <label class= 'boton' >¡ Datos Curiosos !</label>
+      <label class= 'boton flex-btn' >¡ Datos Curiosos !</label>
     </div>
     <section class="probar">
       <div class='article'>
