@@ -74,11 +74,6 @@ body {
     cursor: pointer;
     
 }
-.flex-btn{
-
-}
-
-
 .article{
     background-image: url(picture/hola.png);
     /*background-size: 100vw 100vh;
@@ -122,20 +117,6 @@ body {
     margin-left: 20px;
 
 }
-   
-
-/*figure {
-    width: auto;
-    margin: 0%;
-}
-img {
-    width: 100%;
-}
-.image2 {
-    margin-top: 10rem;
-}*/
-
-
 
 /*MENU DESPLEGABLE*/
 nav {
@@ -257,4 +238,27 @@ nav ul ul li.ultimo {
 }
 nav ul ul a:hover { 
     background-color:rgba(128, 167, 251, 0.9); 
+}
+
+/*Segunda Página*/
+
+#segundapagina{
+    display: none;
+}
+.filtro{
+    background-image: url(picture/fondo2.jpeg);
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    height: 300px;
+}
+.cuerpo{
+    background-color: white;
+}
+.boxpersonaje{
+    background-color: rgb(133, 15, 133);
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
 }

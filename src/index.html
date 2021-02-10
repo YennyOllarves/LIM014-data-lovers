@@ -7,27 +7,33 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+  
+  <div id = "paginaprincipal">
     <header class='background-header'>
       <section class='flex-top-header'>
         <nav id="MenuNav" class="menu">
           <ul>
             <li> <a href="#" title="Menu 2">Menú <span>^</span></a>
-            
               <ul>
-                <li> <a href="#" title="SubMenu 1">SubMenú 1</a> </li>
-                <li> <a href="#" title="SubMenu 2">SubMenú 2</a> </li>
+                <li> <a class="submenu" href="#" title="SubMenu 1" >Por su nombre de A-Z</a> </li>
+                <li > <a class="submenu" href="#" title="SubMenu 2">Por su nombre de Z-A</a> </li>
+                <li > <a href="#" title="SubMenu 2">Por su Especie</a> </li>
+                <li > <a href="#" title="SubMenu 2">Por su Género</a> </li>
+                <li > <a href="#" title="SubMenu 2">Por su Estado</a> </li>
+                <li > <a href="#" title="SubMenu 2">Viven en la Tierra</a> </li>
                 <li class="ultimo"> <a href="#" title="SubMenu 3">SubMenú 3</a> </li>
               </ul>
             </li>	
             </li>	
           </ul>
         </nav>
+       
         <form class="search-form">
           <input type="text" name="text" placeholder="Buscar">
           <button>Buscar</button>
           </form> 
-      </section>
       <br>
+        
         <section class="alinear">
           <img class='logo flex-logo' src="picture/logo.png">
         </section>
@@ -43,8 +49,7 @@
             <h2>Rick acaba de mudarse a casa de su hija Beth y allí recuerda que tiene un nieto llamado Morty. Sin preguntar a nadie, decide que va a obligarle a que le acompañe a todo tipo de aventuras para que el chico se vuelva inteligente como él y no se convierta en un idiota como Jerry, padre de Morty y yerno de Rick.</h2>
           </aside>
         </aside>
-      </aside>
-     <!--</div>--> 
+      </aside> 
     </header>
 
     <div class=boton2>
@@ -53,10 +58,18 @@
     <section class="probar">
       <div class='article'>
         <img class="tamaño" src="picture/giphy.gif" alt="">
-      </div>
-      
+      </div>  
     </section>
-    <section class='section-footer'></section>
+  
+  </div>
+
+<!--Segunda Página-->
+    <section id='segundapagina'>
+      <header class='filtro'></header>
+      <section class='cuerpo'>
+        <div class='boxpersonaje'></div>
+      </section>
+    </section>
      
 
     <div id="root"></div>

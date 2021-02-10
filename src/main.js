@@ -16,3 +16,14 @@ const datos = data.results;
 //console.log(datos);
 console.log(gender(datos));
 //console.log(order(datos));
+
+//let list = document.querySelectorAll('.submenu');
+//console.log(list);
+document.querySelectorAll('.submenu').forEach(item => {
+    item.addEventListener('click', event => {
+        document.getElementById('segundapagina').style.display = 'block'
+        document.getElementById('paginaprincipal').style.display = 'none';
+    //Write your code hear
+    console.log(event);
+    })
+    }) 
