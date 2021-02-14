@@ -268,21 +268,6 @@ nav ul ul a:hover {
     margin-top: 20px;
     margin-left: 20px;
 }
-
-<<<<<<< HEAD
-.card:hover .card-inner {
-    transform: rotateY(180deg);
-}
-
-.card-inner {
-    width: 100%;
-    height: 100%;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-}
-
-=======
->>>>>>> ad9d1d41bd9a2af7aadd1a109f244a600e84ac65
 .card {
     background-color: #7ffa67;
     display: inline-block;
@@ -303,34 +288,6 @@ nav ul ul a:hover {
     justify-content: space-evenly;
     max-width: 1100px;
     margin: 0 auto;
-<<<<<<< HEAD
+
 }
 
-.card__list {
-    list-style: none;
-    padding: 0px;
-    border-radius: 10px;
-}
-
-.card-front, .card-back{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 5px;
-}
-
-.card-front{
-    background-color: #7ffa67;
-    text-align: center;
-}
-
-.card-back{
-    transform: rotateY(180deg);
-    background-color: black;
-    text-align: center;
-    color: #7ffa67;
-}
-=======
-}
->>>>>>> ad9d1d41bd9a2af7aadd1a109f244a600e84ac65
