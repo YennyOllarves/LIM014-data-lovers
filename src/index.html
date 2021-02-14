@@ -15,10 +15,11 @@
     <header class='background-header'>
       <section class='flex-top-header'>
         <nav id="MenuNav" class="menu">
+
           <ul>
             <li> <a href="#" title="Menu 2">Menú <span>^</span></a>
               <ul>
-                <li> <a class="submenu" href="#" title="SubMenu 1" >Por su nombre de A-Z</a> </li>
+                <li> <a id= "primer" class="submenu" href="#" title="SubMenu 1" >Por su nombre de A-Z</a> </li>
                 <li > <a class="submenu" href="#" title="SubMenu 2">Por su nombre de Z-A</a> </li>
                 <li > <a href="#" title="SubMenu 2">Por su Especie</a> </li>
                 <li > <a href="#" title="SubMenu 2">Por su Género</a> </li>
@@ -69,11 +70,31 @@
 <!--Segunda Página-->
     <section id='segundapagina'>
       <header class='filtro'></header>
-      <section class='cuerpo'>
-        <div class='boxpersonaje'></div>
-      </section>
+      <div id="items" class="card__container "></div>
+       
+        <template id="template-card" >
+          <div class="card">
+            <img src="" alt="" width="150px" height="150px">
+            <h3>name</h3>
+            <h4 >status</h4>
+            <h5 >species</h5>
+            <p>gender</p>
+            
+          </div>
+       
+    </template>
     </section>
-     
+    
+    
+
+    <!--3 Página-->
+    <section id='tercerapagina'>
+      <header class='filtro'></header>
+      <div id="genderr" class="card__container "></div>
+    </section>
+
+    
+
 
     <div id="root"></div>
     <script src="main.js" type="module"></script>
