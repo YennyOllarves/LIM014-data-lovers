@@ -248,9 +248,8 @@ nav ul ul a:hover {
     display: none;
 }
 
-#tercerapagina{
-    display: none;
-}
+
+
 .filtro{
     background-image: url(picture/fondo2.jpeg);
     background-position: center center;
@@ -258,27 +257,22 @@ nav ul ul a:hover {
     text-align: center;
     height: 300px;
 }
-.cuerpo{
-    background-color: white;
-}
-.boxpersonaje{
-    background-color: rgb(133, 15, 133);
-    width: 200px;
-    height: 200px;
-    margin-top: 20px;
-    margin-left: 20px;
-}
+
 .card {
-    background-color: #7ffa67;
+    background-color: #11f8f8;
+    background-image:url(picture/cardfondop.png); 
+  
     display: inline-block;
-    padding: 15px;
-    margin-bottom: 15px;
-    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 250px;
     height: 300px;
-    border: 5px groove black;
+    border: 3px  black;
+    border-style: double;
     border-radius: 10px;
     text-align: center;
-    cursor: pointer;
+    color: blanchedalmond;
+    
 }
 
 .card__container {
@@ -286,8 +280,9 @@ nav ul ul a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding-top: 20px;
 
 }
 
