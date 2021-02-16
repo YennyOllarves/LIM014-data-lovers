@@ -272,5 +272,9 @@ document.querySelector('.boton2').addEventListener(
     console.log(event);
 
   }
+<<<<<<< HEAD
 )
 
+=======
+)
+>>>>>>> a6a5f59d835f1de5ba861ffa4decbeb024984850

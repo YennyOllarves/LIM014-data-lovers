@@ -294,9 +294,18 @@ nav ul ul a:hover {
   
   
   .mainmenu a:hover {
+<<<<<<< HEAD
       background-color: rgb(0,176,199);
   }
   
+=======
+      background-color: #C5C5C5;
+  }
+  
+  
+  
+  
+>>>>>>> a6a5f59d835f1de5ba861ffa4decbeb024984850
   .mainmenu li:hover .submenu {
     display: block;
     max-height: 200px;
@@ -304,18 +313,31 @@ nav ul ul a:hover {
   
     
   .submenu a {
+<<<<<<< HEAD
     background-color:  rgb(0,176,199);
+=======
+    background-color: #999;
+>>>>>>> a6a5f59d835f1de5ba861ffa4decbeb024984850
   }
   
   
   .submenu a:hover {
+<<<<<<< HEAD
     background-color: #CCD852;}
+=======
+    background-color: #666;
+  }
+>>>>>>> a6a5f59d835f1de5ba861ffa4decbeb024984850
   
   
   .submenu {
     overflow: hidden;
     max-height: 0;
+<<<<<<< HEAD
     
+=======
+    -webkit-transition: all 0.5s ease-out;
+>>>>>>> a6a5f59d835f1de5ba861ffa4decbeb024984850
   }
 
   /*tercerapagina*/
@@ -329,6 +351,7 @@ nav ul ul a:hover {
 
 #tercerapagina {
     display: none;
+<<<<<<< HEAD
 }
 
 
@@ -337,3 +360,6 @@ nav ul ul a:hover {
 
 
 
+=======
+}
+>>>>>>> a6a5f59d835f1de5ba861ffa4decbeb024984850
