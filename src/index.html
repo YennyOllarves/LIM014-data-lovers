@@ -14,23 +14,34 @@
   <div id = "paginaprincipal">
     <header class='background-header'>
       <section class='flex-top-header'>
-        <nav id="MenuNav" class="menu">
-          <ul>
+        <nav id="MenuNav" class="menu navigation">
+          <ul class="mainmenu"> 
             <li> <a href="#" title="Menu 2">Menú <span>^</span></a>
               <ul>
-                <li> <a class="submenu" href="#" title="SubMenu" >Por su nombre de A-Z</a> </li>
+                <li> <a class="submenu0" href="#" title="SubMenu" >Por su nombre de A-Z</a> </li>
                 <li > <a class="submenu1" href="#" title="SubMenu 1">Por su nombre de Z-A</a> </li>
-                <li > <a class="submenu2" href="#human" title="SubMenu 2">Por su Especie</a> </li>
-                <li > <a class="submenu3" href="#" title="SubMenu 3">Por su Género</a> </li>
-                <li > <a class="submenu4" href="#" title="SubMenu 4">Por su Estado</a> </li>
+                <li > <a class="submenu2" href="#" title="SubMenu 2">Por su Especie</a>
+                  <ul class="submenu">
+                  <li><a id="human" href="#" title="">Humanos</a></li>
+                  <li><a id="alien" href="#">Aliens</a></li>
+                </ul> </li>
+                <li > <a class="submenu3" href="#" title="SubMenu 3">Por su Género</a>
+                  <ul class="submenu">
+                    <li><a id="male" href="#" title="">Masculino</a></li>
+                    <li><a id= "female" href="#">Femenino</a></li>
+                    <li><a id="undknown" href="#">Desconocido</a></li>
+                  </ul>  </li>
+                <li > <a class="submenu4" href="#" title="SubMenu 4">Por su Estado</a>
+                  <ul class="submenu">
+                    <li><a id="alive" href="#" title="">Vivos</a></li>
+                    <li><a id= "dead" href="#">Muertos</a></li>
+                  </ul>  </li>
                 <li > <a class="submenu5" href="#" title="SubMenu 5">Viven en la Tierra</a> </li>
-                <li class="ultimo"> <a href="#" title="SubMenu 3">SubMenú 3</a> </li>
               </ul>
             </li>	
             </li>	
           </ul>
         </nav>
-       
         <form class="search-form">
           <input calss="boton" type="text" name="text" placeholder="Buscar">
           <button class="boton">Buscar</button>
@@ -89,6 +100,20 @@
         </div>
       </section>
     </section>
+
+<!--TerceraPágina-->
+<section id='tercerapagina'>
+  <section class='filtro1'>
+    <button class="home" id="home">Home</button>
+    <section  id="cuerpo">
+      <button class="pregunta">pregunta1</button>
+      <button class="pregunta">pregunta2</button>
+      <button class="pregunta">redirecciona1</button>
+      <button class= "pregunta">redirecciona2</button>
+    </section>
+  </section>
+
+</section>
      
 
     <div id="root"></div>
