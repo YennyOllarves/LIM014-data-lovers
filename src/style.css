@@ -120,21 +120,24 @@
 
 }
 
+
 /*MENU DESPLEGABLE*/
-/*nav {
+nav {
 	display:block;
 	margin: 0 auto 20px;
 	border: 1px solid rgb(243, 242, 242);
 	position: relative;
-	background-color: #06174e;
+	
 	font: 16px Tahoma, sans-serif;
 }
+
 nav ul {
 	padding:0;
 	margin: 0;
     
     text-align: center;
 }
+
 nav ul:after {
 	content:".";
 	display: block;
@@ -142,61 +145,21 @@ nav ul:after {
 	clear: both;
 	visibility: hidden;
 }
+
 nav li {
 	position: relative;
-	float: left;
+	/*float: left;*/
 	list-style-type: none;
 }
-nav li a{
-	display:block;
-	padding: 10px 20px;
-	border-left: 1px solid #999;
-	border-right: 1px solid #222;
-	color: rgb(249, 249, 250);
-	text-decoration: none;
-}
-nav li a:focus{
-	outline: none;
-	text-decoration: underline;
-}
-nav li:firt-child a{
-	border-left: none;
-}
-nav li.ultimo a {
-	border-right: none;
-}
-nav li:hover ul {
-	display: block;
-}
-nav a span { 
-    display: block; 
-    float: right; 
-    margin-left: 5px; 
-}
+
+
+
 nav ul a span { 
     -moz-transform:rotate(-180deg);
     -webkit-transform:rotate(-180deg);
     transform: rotate(-180deg);
 }
-nav ul ul { 
-    display: none; 
-    width: 100%; 
-    position: absolute; 
-    left: 0; 
-    background: #257bcc;
-}
-nav ul ul li { 
-    float: none; 
-}
-nav ul ul a { 
-    padding: 5px 10px; 
-    border-left: none; 
-    border-right: none; 
-    font-size: 14px; 
-}
-nav ul ul a:hover { 
-    background-color: #257bcc; 
-}
+
 nav { 
     border-radius:4px;
     box-shadow:2px 2px 2px rgba(245, 243, 243, 0.75);
@@ -208,25 +171,9 @@ nav li:hover {
     background-image:-moz-linear-gradient(0% 100px 90deg, rgb(14, 82, 230), #0d0e4e); 
     background-image:-webkit-gradient(linear, 0% 0%, 0% 70%, from(#80a1fb), to(rgb(35, 7, 196))); 
 }
-nav ul ul { 
-    border-bottom-left-radius:4px; 
-    border-bottom-right-radius:4px;
-    box-shadow:2px 2px 2px rgba(0,0,0,.8); 
-    background-color:rgba(94, 91, 223, 0.8); 
-}
-nav ul ul li { 
-    border-left:1px solid rgba(0,0,0,0.1); 
-    border-right:1px solid rgba(0,0,0,0.1); 
-}
-nav ul ul li.ultimo { 
-    border-left:1px solid rgba(0,0,0,0.1); 
-    border-bottom:1px solid rgba(0,0,0,0.1);
-    border-bottom-left-radius:4px; 
-    border-bottom-right-radius:4px;  
-}
-nav ul ul a:hover { 
-    background-color:rgba(128, 167, 251, 0.9); 
-}*/
+
+
+
 
 /*Segunda Página*/
 
@@ -245,7 +192,7 @@ nav ul ul a:hover {
 }
 
 .card {
-    background-color: #11f8f8;
+    background-color:  #7FFA67;
     background-image:url(picture/cardfondop.png); 
   
     display: inline-block;
@@ -253,7 +200,7 @@ nav ul ul a:hover {
     margin-bottom: 10px;
     width: 250px;
     height: 300px;
-    border: 3px  black;
+    border: 3px   #CCD852;
     border-style: double;
     border-radius: 10px;
     text-align: center;
@@ -273,7 +220,7 @@ nav ul ul a:hover {
 }
 
 .navigation {
-    width: 300px;
+    width: 220px;
   }
   
  
@@ -286,30 +233,29 @@ nav ul ul a:hover {
  
   .mainmenu a {
     display: block;
-    background-color: #CCC;
+    background-color: rgb(241, 236, 236);
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     color: #000;
   }
   
   
   .mainmenu a:hover {
-      background-color: rgb(0,176,199);
+      background-color: #11f8f8;
   }
   
   .mainmenu li:hover .submenu {
     display: block;
-    max-height: 200px;
+    max-height: 100px;
   }
   
     
   .submenu a {
     background-color:  rgb(0,176,199);
   }
-  
-  
   .submenu a:hover {
-    background-color: #CCD852;}
+  background-color: #CCD852;
+}
   
   
   .submenu {
@@ -332,8 +278,31 @@ nav ul ul a:hover {
 }
 
 
+.home{
+    margin-top: 30px;
+    font-family: 'Reggae One';
+    font-size: 30px;
+    color: #7FFA67;
+    text-shadow: rgb(0,176,199) 2px -1px;
+ 
+    background: black;
+    border: 3px #7FFA67;
+    border-style:groove;
+    box-shadow: 5px 5px 5px #fafd7cff;
+    padding: 5px 10px;
+   /* border-radius: 10px;*/
+    
 
+}
 
+.titleOne{
+  font-family: 'Reggae One', cursive;
+  font-size: 70px;
+  text-align: center;
+  color: rgb(0,176,199);
 
+  text-shadow: #CCD852 -2px -5px;
+  -webkit-text-stroke: 1px #24325fff;
+}
 
 
