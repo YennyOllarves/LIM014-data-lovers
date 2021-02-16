@@ -121,7 +121,7 @@
 }
 
 /*MENU DESPLEGABLE*/
-nav {
+/*nav {
 	display:block;
 	margin: 0 auto 20px;
 	border: 1px solid rgb(243, 242, 242);
@@ -240,7 +240,7 @@ nav ul ul li.ultimo {
 }
 nav ul ul a:hover { 
     background-color:rgba(128, 167, 251, 0.9); 
-}
+}*/
 
 /*Segunda Página*/
 
@@ -286,3 +286,65 @@ nav ul ul a:hover {
 
 }
 
+.navigation {
+    width: 300px;
+  }
+  
+ 
+  .mainmenu, .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+ 
+  .mainmenu a {
+    display: block;
+    background-color: #CCC;
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+  }
+  
+  
+  .mainmenu a:hover {
+      background-color: #C5C5C5;
+  }
+  
+  
+  
+  
+  .mainmenu li:hover .submenu {
+    display: block;
+    max-height: 200px;
+  }
+  
+    
+  .submenu a {
+    background-color: #999;
+  }
+  
+  
+  .submenu a:hover {
+    background-color: #666;
+  }
+  
+  
+  .submenu {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-out;
+  }
+
+  /*tercerapagina*/
+
+  .filtro1 {
+    background-image: url(picture/fondo1.png);
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+}
+
+#tercerapagina {
+    display: none;
+}
