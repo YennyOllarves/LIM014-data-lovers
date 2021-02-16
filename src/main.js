@@ -28,7 +28,11 @@ function uniqueTemplate (datos){
 //orderAZ
 
 document.querySelector(".submenu0").onclick = function() {
+<<<<<<< HEAD
+  document.getElementById("titulo").innerHTML = `<p class="titleOne"> Personajes de A-Z</p>`
+=======
   document.getElementById("titulo").innerHTML = 'Personajes ordenamos de A-Z'
+>>>>>>> a6a5f59d835f1de5ba861ffa4decbeb024984850
   let datos = data.results;
   datos = orderAZ(datos);
   document.getElementById("card").innerHTML = uniqueTemplate(datos);
@@ -38,7 +42,7 @@ document.querySelector(".submenu0").onclick = function() {
 //orderZA
 
 document.querySelector(".submenu1").onclick = function() {
-  document.getElementById("titulo").innerHTML = 'Personajes ordenamos de Z-A'
+  document.getElementById("titulo").innerHTML = `<p class="titleOne">Personajes de Z-A</p>`
   let datos = data.results;
   datos = orderZA(datos);
   document.getElementById("card").innerHTML = uniqueTemplate(datos);
@@ -46,6 +50,44 @@ document.querySelector(".submenu1").onclick = function() {
 }
 
 //species
+<<<<<<< HEAD
+
+document.querySelector("#human").onclick = function() {
+  document.getElementById("titulo").innerHTML = `<p class="titleOne">Personajes por su especie</p>`
+}
+
+document.querySelector("#alien").onclick = function() {
+  document.getElementById("titulo").innerHTML = `<p class="titleOne"> Personajes por su especie</p>`
+}
+
+  document.getElementById("human").addEventListener(
+    "click", function () {
+
+      let datos = data.results;
+      datos = speciesHuman(datos);
+      document.getElementById("card").innerHTML = uniqueTemplate(datos);
+    }) 
+
+  document.getElementById("alien").addEventListener(
+    "click" , function () {
+      let datos = data.results;
+      datos= speciesAlien(datos);
+      document.getElementById("card").innerHTML = uniqueTemplate(datos);
+    })
+
+
+//gender
+
+document.querySelector("#male").onclick = function() {
+  document.getElementById("titulo").innerHTML = `<p class="titleOne"> Personajes masculinos</p>`
+}
+
+document.querySelector("#female").onclick = function() {
+  document.getElementById("titulo").innerHTML = `<p class="titleOne"> Personajes femeninos</p>`
+}
+document.querySelector("#undknown").onclick = function() {
+  document.getElementById("titulo").innerHTML = `<p class="titleOne"> Personajes con genero desconocido </p>`
+=======
 
 document.querySelector("#human").onclick = function() {
   document.getElementById("titulo").innerHTML = 'Personajes ordenamos por su especie'
@@ -82,6 +124,7 @@ document.querySelector("#female").onclick = function() {
 }
 document.querySelector("#undknown").onclick = function() {
   document.getElementById("titulo").innerHTML = 'Personajes con genero desconocido'
+>>>>>>> a6a5f59d835f1de5ba861ffa4decbeb024984850
 }
 
   document.getElementById("male").addEventListener(
@@ -107,11 +150,19 @@ document.querySelector("#undknown").onclick = function() {
 //status
 
 document.querySelector("#alive").onclick = function() {
+<<<<<<< HEAD
+  document.getElementById("titulo").innerHTML = `<p class="titleOne">Personsajes Vivos </p>`
+}
+
+document.querySelector("#dead").onclick = function() {
+  document.getElementById("titulo").innerHTML = `<p class="titleOne"> Personajes muertos</p>`
+=======
   document.getElementById("titulo").innerHTML = 'Personajes vivos'
 }
 
 document.querySelector("#dead").onclick = function() {
   document.getElementById("titulo").innerHTML = 'Personajes muertos'
+>>>>>>> a6a5f59d835f1de5ba861ffa4decbeb024984850
 }
 
 
@@ -132,7 +183,7 @@ document.querySelector("#dead").onclick = function() {
 //Personajes de la Tierra
 
 document.querySelector(".submenu5").onclick = function() {
-  document.getElementById("titulo").innerHTML = 'Personajes de la Tierra C-137'
+  document.getElementById("titulo").innerHTML = `<p class="titleOne">Personajes de la Tierra C-137</p>`
   let datos = data.results;
   datos = tierraOrigin(datos);
   document.getElementById("card").innerHTML = uniqueTemplate(datos);
@@ -275,6 +326,11 @@ document.querySelector('.boton2').addEventListener(
 <<<<<<< HEAD
 )
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> probandocss
 =======
 )
 >>>>>>> a6a5f59d835f1de5ba861ffa4decbeb024984850
