@@ -121,7 +121,7 @@
 }
 
 /*MENU DESPLEGABLE*/
-nav {
+/*nav {
 	display:block;
 	margin: 0 auto 20px;
 	border: 1px solid rgb(243, 242, 242);
@@ -129,14 +129,12 @@ nav {
 	background-color: #06174e;
 	font: 16px Tahoma, sans-serif;
 }
-
 nav ul {
 	padding:0;
 	margin: 0;
     
     text-align: center;
 }
-
 nav ul:after {
 	content:".";
 	display: block;
@@ -144,13 +142,11 @@ nav ul:after {
 	clear: both;
 	visibility: hidden;
 }
-
 nav li {
 	position: relative;
 	float: left;
 	list-style-type: none;
 }
-
 nav li a{
 	display:block;
 	padding: 10px 20px;
@@ -159,36 +155,29 @@ nav li a{
 	color: rgb(249, 249, 250);
 	text-decoration: none;
 }
-
 nav li a:focus{
 	outline: none;
 	text-decoration: underline;
 }
-
 nav li:firt-child a{
 	border-left: none;
 }
-
 nav li.ultimo a {
 	border-right: none;
 }
-
 nav li:hover ul {
 	display: block;
 }
-
 nav a span { 
     display: block; 
     float: right; 
     margin-left: 5px; 
 }
-
 nav ul a span { 
     -moz-transform:rotate(-180deg);
     -webkit-transform:rotate(-180deg);
     transform: rotate(-180deg);
 }
-
 nav ul ul { 
     display: none; 
     width: 100%; 
@@ -208,7 +197,6 @@ nav ul ul a {
 nav ul ul a:hover { 
     background-color: #257bcc; 
 }
-
 nav { 
     border-radius:4px;
     box-shadow:2px 2px 2px rgba(245, 243, 243, 0.75);
@@ -216,12 +204,10 @@ nav {
     background-image:-moz-linear-gradient(0% 22px 90deg, #0f0f0f, rgb(19, 18, 18)); 
     background-image:-webkit-gradient(linear, 0% 0%, 0% 70%, from(rgb(12, 12, 12)), to(#0a0a0a));  
 }
-
 nav li:hover { 
     background-image:-moz-linear-gradient(0% 100px 90deg, rgb(14, 82, 230), #0d0e4e); 
     background-image:-webkit-gradient(linear, 0% 0%, 0% 70%, from(#80a1fb), to(rgb(35, 7, 196))); 
 }
-
 nav ul ul { 
     border-bottom-left-radius:4px; 
     border-bottom-right-radius:4px;
@@ -240,7 +226,7 @@ nav ul ul li.ultimo {
 }
 nav ul ul a:hover { 
     background-color:rgba(128, 167, 251, 0.9); 
-}
+}*/
 
 /*Segunda Página*/
 
@@ -285,4 +271,69 @@ nav ul ul a:hover {
     padding-top: 20px;
 
 }
+
+.navigation {
+    width: 300px;
+  }
+  
+ 
+  .mainmenu, .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+ 
+  .mainmenu a {
+    display: block;
+    background-color: #CCC;
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+  }
+  
+  
+  .mainmenu a:hover {
+      background-color: rgb(0,176,199);
+  }
+  
+  .mainmenu li:hover .submenu {
+    display: block;
+    max-height: 200px;
+  }
+  
+    
+  .submenu a {
+    background-color:  rgb(0,176,199);
+  }
+  
+  
+  .submenu a:hover {
+    background-color: #CCD852;}
+  
+  
+  .submenu {
+    overflow: hidden;
+    max-height: 0;
+    
+  }
+
+  /*tercerapagina*/
+
+  .filtro1 {
+    background-image: url(picture/fondo1.png);
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+}
+
+#tercerapagina {
+    display: none;
+}
+
+
+
+
+
+
 
