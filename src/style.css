@@ -208,10 +208,25 @@
     background-position: center center;
     background-size: cover;
     text-align: center;
+    height: 635px ;
     }
-    
     #tercerapagina {
     display: none;
+    }
+    .ventana{
+        background: #999;
+        width: 30%;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 18px;
+        text-align: center;
+        padding: 33px;
+        min-height: 250px;
+        border-radius: 22px;
+        position: absolute;
+        left: 35%;
+        top: 25%;
+        display: none;
     }
     
     .home{

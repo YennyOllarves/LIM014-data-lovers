@@ -245,3 +245,72 @@ console.log(event);
 
 }
 )
+
+document.querySelector('.pregunta').addEventListener(
+  'mouseover', event =>{
+    document.getElementById('ventana').style.display = 'block';
+    console.log(event)
+  }
+)
+
+document.querySelector('.pregunta').addEventListener(
+  'mouseout', event =>{
+    document.getElementById('ventana').style.display = 'none';
+    console.log(event)
+  }
+)
+
+
+let datos = data.results;
+let allWorlds = [];
+let planeta = [];
+
+let allnewObjetos = [];
+//let numberEpisodes = [];
+datos.forEach(elemento => {
+  const objOrigin = elemento.origin;
+  const nombre = elemento.name;
+  const objEpisodios = elemento.episode;
+  const numeros = objEpisodios.length
+  //numberEpisodes.push(nombre,objEpisodios.length)
+  
+  const combinado = {nombre, objEpisodios, numeros}
+  allnewObjetos.push(combinado)
+  const valorObjOrigin = Object.values(objOrigin)
+  allWorlds.push(valorObjOrigin[0]);
+  
+  //console.log(combinado);
+
+
+});
+
+//console.log(allnewObjetos);
+let cinco = [];
+allnewObjetos.map(numeros1 => {
+  if(numeros1.numeros > 20) {
+    cinco.push(numeros1)
+  }
+})
+console.log(cinco);
+
+allWorlds.map(mundo=>{
+  if (planeta.includes(mundo) === false ){
+    planeta.push(mundo)
+
+  }
+
+})
+
+//console.log(numberEpisodes);
+//console.log(names);
+//console.log(planeta);
+//console.log(allWorlds);
+
+
+
+/*let separar = datos.origin;
+let separar1 = Object.values(separar);
+console.log(datos)
+console.log(separar)
+console.log(separar1)
+console.log(separar1[0])*/
