@@ -71,3 +71,6 @@ export const tierraOrigin = (datos) => {
   let tierraPersonaje = datos.filter(personaje => personaje.origin.name == 'Earth (C-137)');
   return (tierraPersonaje)
 } 
+
+//Calculo
+
