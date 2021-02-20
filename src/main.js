@@ -394,3 +394,5 @@ console.log(datos)
 console.log(separar)
 console.log(separar1)
 console.log(separar1[0])*/
+
+
