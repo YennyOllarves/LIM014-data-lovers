@@ -1,3 +1,4 @@
+
 //orderA-Z
 export const orderAZ = (datos) => {
   let ordenar = datos.sort((a,b) => {
@@ -74,3 +75,7 @@ export const tierraOrigin = (datos) => {
 
 //Calculo
 
+export const Buscadorr = (datos,input) => {
+  let malePersonaje = datos.filter(personaje => personaje.name.startsWith(input) === true);
+  return (malePersonaje)
+}

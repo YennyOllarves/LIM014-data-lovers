@@ -1,8 +1,9 @@
 import data from './data/rickandmorty/rickandmorty.js';
-import {orderAZ, orderZA, genderMale, genderFemale, genderUnknown, speciesHuman, speciesAlien, statusAlive, statusDead, tierraOrigin} from './data.js';
+import {orderAZ, orderZA, genderMale, genderFemale, genderUnknown, speciesHuman, speciesAlien, statusAlive, statusDead, tierraOrigin,Buscadorr} from './data.js';
 
 function uniqueTemplate (datos){
 const items = document.getElementById('items');
+items.innerHTML = "";
 const templateCard = document.getElementById('template_card').content;
 const fragment = document.createDocumentFragment();
 const pintarCards = datos => {
@@ -246,19 +247,68 @@ console.log(event);
 }
 )
 
-document.querySelector('.pregunta').addEventListener(
+
+document.querySelector('#buscador').addEventListener(
+  'click', event =>{
+    document.getElementById("paginaprincipal").style.display = 'none';
+    document.getElementById("segundapagina").style.display = 'block';
+  
+  console.log(event);
+  
+  }
+  )
+
+document.querySelector('#pregunta1').addEventListener(
   'mouseover', event =>{
     document.getElementById('ventana').style.display = 'block';
+    document.getElementById("parrafo1").innerHTML = "Hay: " + planeta.length + " mundos"
     console.log(event)
   }
 )
 
-document.querySelector('.pregunta').addEventListener(
+document.querySelector('#pregunta1').addEventListener(
   'mouseout', event =>{
     document.getElementById('ventana').style.display = 'none';
-    console.log(event)
+    console.log(event);
   }
 )
+
+function cincoPer(cinco) {
+  const prueba = document.getElementById('personaje');
+  const templateP= document.getElementById('template_personajes').content;
+  templateP.innerHTML = "";
+  const fragment = document.createDocumentFragment();
+  const personajesCards = cinco =>{
+    cinco.forEach(personajes =>{
+        templateP.querySelector('img').setAttribute('src', personajes.imagen)
+        templateP.querySelector('p3').textContent = 'Nombre: ' + personajes.nombre
+        templateP.querySelector('p4').textContent = 'Numero de Planetas: ' +personajes.numeros
+        const clone=templateP.cloneNode(true)
+        fragment.appendChild(clone)
+    })
+    
+    prueba.appendChild(fragment)
+  }
+  return personajesCards(cinco)
+    }
+
+document.querySelector('#pregunta2').addEventListener(
+  'mouseover', event =>{
+   
+    document.getElementById('ventana').style.display = 'block';
+    //document.getElementsById("parrafo1").innerHTML = "";
+    //console.log(cincoPer(cinco))
+    document.getElementById("card").innerHTML = "Hola " + cincoPer(cinco)
+    
+  }
+)
+
+//document.querySelector('#pregunta2').addEventListener(
+  //'mouseout', event =>{
+    //document.getElementById('ventana').style.display = 'none';
+    //console.log(event)
+  //}
+//)
 
 
 let datos = data.results;
@@ -272,17 +322,20 @@ datos.forEach(elemento => {
   const nombre = elemento.name;
   const objEpisodios = elemento.episode;
   const numeros = objEpisodios.length
+  const imagen = elemento.image;
   //numberEpisodes.push(nombre,objEpisodios.length)
   
-  const combinado = {nombre, objEpisodios, numeros}
+  const combinado = {imagen, nombre, objEpisodios, numeros}
   allnewObjetos.push(combinado)
   const valorObjOrigin = Object.values(objOrigin)
   allWorlds.push(valorObjOrigin[0]);
+  
   
   //console.log(combinado);
 
 
 });
+
 
 //console.log(allnewObjetos);
 let cinco = [];
@@ -290,8 +343,11 @@ allnewObjetos.map(numeros1 => {
   if(numeros1.numeros > 20) {
     cinco.push(numeros1)
   }
+  
+  
+
 })
-console.log(cinco);
+//console.log(cinco);
 
 allWorlds.map(mundo=>{
   if (planeta.includes(mundo) === false ){
@@ -300,6 +356,30 @@ allWorlds.map(mundo=>{
   }
 
 })
+
+
+document.getElementById("textBuscar").addEventListener(
+  "keyup", function () {
+  let input = document.getElementById("textBuscar").value;
+  let datos = data.results;
+  let datos1 = Buscadorr(datos,input);
+  document.getElementById("card").innerHTML = uniqueTemplate(datos1);
+  //console.log(datos1)
+  }) 
+
+
+
+//const d=document.querySelector("#buscador")
+
+//function searchFilter(input, selector){
+  //selector = document.querySelector(".p3")
+  //input = document.getElementById("textBuscar")
+  //d.addEventListener("click", e => {
+    //if(e.target.matches(input)){
+      //console.log(e.input)
+    //}
+  //})
+//}
 
 //console.log(numberEpisodes);
 //console.log(names);

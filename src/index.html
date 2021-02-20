@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,60 +11,93 @@
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div id = "paginaprincipal">
+<!--El header es estable y estático-->
 <header class='background-header'>
-<section class='flex-top-header'>
-<nav id="MenuNav" class="menu navigation">
-<ul class="mainmenu"> 
-<li> <a href="#" title="Menu 2">Menú </a>
-<ul>
-<li> <a class="submenu0" href="#" title="SubMenu" >Por su nombre de A-Z</a> </li>
-<li > <a class="submenu1" href="#" title="SubMenu 1">Por su nombre de Z-A</a> </li>
-<li > <a class="submenu2" href="#" title="SubMenu 2">Por su Especie</a>
-<ul class="submenu">
-<li><a id="human" href="#" title="">Humanos</a></li>
-<li><a id="alien" href="#">Aliens</a></li>
-</ul> </li>
-<li > <a class="submenu3" href="#" title="SubMenu 3">Por su Género</a>
-<ul class="submenu">
-<li><a id="male" href="#" title="">Masculino</a></li>
-<li><a id= "female" href="#">Femenino</a></li>
-<li><a id="undknown" href="#">Desconocido</a></li>
-</ul> </li>
-<li > <a class="submenu4" href="#" title="SubMenu 4">Por su Estado</a>
-<ul class="submenu">
-<li><a id="alive" href="#" title="">Vivos</a></li>
-<li><a id= "dead" href="#">Muertos</a></li>
-</ul> </li>
-<li > <a class="submenu5" href="#" title="SubMenu 5">Viven en la Tierra</a> </li>
-</ul>
-</li> 
-</li> 
-</ul>
-</nav>
-<form class="search-form">
-<input calss="boton" type="text" name="text" placeholder="Buscar">
-<button class="boton">Buscar</button>
-</form> 
-<br>
+  <section class='flex-top-header'>
+    <div id="menuDesplegable">
+      <ul class = "nav">
+      <li><a href = "">HOME</a></li>
+      <li><a href = "">CONOCE A TUS PERSONAJES</a>
+      <ul>
+      <li><a href = "">ORDENADOS DE A-Z</a></li>
+      <li><a href = "">ORDENADOS DE Z-A</a></li>
+      <li><a href = "">POR SU ESPECIE</a>
+      <ul>
+      <li><a href = "">HUMANO</a></li>
+      <li><a href = "">ALIEN</a></li>
+      </ul></li>
+      <li><a href = "">POR SU GÉNERO</a>
+      <ul>
+      <li><a href = "">FEMENINO</a></li>
+      <li><a href = "">MASCULINO</a></li>
+      <li><a href = "">DESCONOCIDO</a></li>
+      </ul></li>
+      <li><a href = "">POR SU ESTADO</a>
+      <ul>
+      <li><a href = "">VIVO</a></li>
+      <li><a href = "">MUERTO</a></li>
+      </ul></li>
+      <li><a href = "">DEL PLANETA TIERRA C-137</a></li>
+      <li><a href = "">TODOS LOS PERSONAJES</a></li>
+      </ul>
+      </li>
+      </ul>
+      </div>
+      
+    <!--<nav id="MenuNav" class="menu navigation">
+  <ul class="mainmenu"> 
+  <li> <a href="#" title="Menu 2">Menú </a>
+  <ul>
+  <li> <a class="submenu0" href="#" title="SubMenu" >Por su nombre de A-Z</a> </li>
+  <li > <a class="submenu1" href="#" title="SubMenu 1">Por su nombre de Z-A</a> </li>
+  <li > <a class="submenu2" href="#" title="SubMenu 2">Por su Especie</a>
+  <ul class="submenu">
+  <li><a id="human" href="#" title="">Humanos</a></li>
+  <li><a id="alien" href="#">Aliens</a></li>
+  </ul> </li>
+  <li > <a class="submenu3" href="#" title="SubMenu 3">Por su Género</a>
+  <ul class="submenu">
+  <li><a id="male" href="#" title="">Masculino</a></li>
+  <li><a id= "female" href="#">Femenino</a></li>
+  <li><a id="undknown" href="#">Desconocido</a></li>
+  </ul> </li>
+  <li > <a class="submenu4" href="#" title="SubMenu 4">Por su Estado</a>
+  <ul class="submenu">
+  <li><a id="alive" href="#" title="">Vivos</a></li>
+  <li><a id= "dead" href="#">Muertos</a></li>
+  </ul> </li>
+  <li > <a class="submenu5" href="#" title="SubMenu 5">Viven en la Tierra</a> </li>
+  </ul>
+  </li> 
+  </li> 
+  </ul>
+  </nav>
+  <form class="search-form">
+    <button id="buscador" class="botonn" >Busca a tus personajes fav</button>
+    </form> -->
+  </section>
+  </header>
+
+<div id = "paginaprincipal">
+
 <section class="alinear">
 <img class='logo flex-logo' src="picture/logo.png">
 </section>
 <input type="checkbox" id="btn-modal">
 <br>
-<label for="btn-modal" class= 'boton'>¡ Aquí un resumen !</label>
+<label id="botonResumen" for="btn-modal" class= 'boton'>¡ AQUÍ UN RESUMEN !</label>
 <aside class="modal">
 <aside class='contenedor'>
-<label for="btn-modal">X</label>
+<label for="btn-modal">cerrar</label>
 <aside class="contenido">
 <h2>Rick acaba de mudarse a casa de su hija Beth y allí recuerda que tiene un nieto llamado Morty. Sin preguntar a nadie, decide que va a obligarle a que le acompañe a todo tipo de aventuras para que el chico se vuelva inteligente como él y no se convierta en un idiota como Jerry, padre de Morty y yerno de Rick.</h2>
 </aside>
 </aside>
 </aside> 
-</header>
 
-<div class=boton2>
-<label class= 'boton flex-btn' >¡ Datos Curiosos !</label>
+
+<div class="boton2">
+<label class= 'boton flex-btn' >¡ DATOS CURIOSOS !</label>
 </div>
 <section class="probar">
 <div class='article'>
@@ -76,16 +108,19 @@
 
 <!--Segunda Página-->
 <section id='segundapagina' style="background-color: black;">
-<header class='filtro'>
+<header1 class='filtro'>
+  <form class="search-form">
+    <input id="textBuscar" class="botonn1" name="text" placeholder="Buscar">
+    </form> 
 <button class="home" id="home">Home</button>
 <h id="titulo"></h>
-</header>
+</header1>
 <section id="cuerpo">
 <div id="items" class="card__container">
 <template id="template_card">
 <div class="card" id="card">
 <img src="" alt="" witdth="150px" height="150px"><br>
-<p3>name: </p3><br>
+<p3 class="p3">name: </p3><br>
 <p4>status: </p4><br>
 <p5>species: </p5><br>
 <p6>gender: </p6><br>
@@ -100,13 +135,24 @@
 <section id='tercerapagina'>
 <section class='filtro1'>
 <button class="home" id="home">Home</button>
+
 <section id="cuerpo">
 <button id="pregunta1" class="pregunta">pregunta1</button>
-<button class="pregunta">pregunta2</button>
+<button id="pregunta2" class="pregunta">pregunta2</button>
 <button class="pregunta">redirecciona1</button>
 <button class= "pregunta">redirecciona2</button>
 <div id="ventana" class="ventana">
-    Hola
+    <p id="parrafo1"></p>
+    <div id="personaje" class="card__container">
+      <template id="template_personajes">
+      <div class="card" id="card">
+      <img src="" alt="" witdth="150px" height="150px"><br>
+      <p3>name: </p3><br>
+      <p4>Total de mundos: </p4><br>
+      
+      </div>
+      </template>
+      </div>
   </div>
 </section>
 </section>
@@ -114,6 +160,33 @@
 </section>
 
 </section>
+
+<!--Cuarta Pagina-->
+<section id='cuartapagina' style="background-color: black;">
+  <header class='filtro'>
+  <button class="home" id="home">Home</button>
+  
+  <h id="titulo"></h>
+  </header>
+  <section id="cuerpo">
+  <div id="items" class="card__container">
+  <template id="template_card">
+  <div class="card" id="card">
+  <img src="" alt="" witdth="150px" height="150px"><br>
+  <p3 class="p3">name: </p3><br>
+  <p4>status: </p4><br>
+  <p5>species: </p5><br>
+  <p6>gender: </p6><br>
+  <p7>origin: </p7><br>
+  </div>
+  </template>
+  </div>
+  </section>
+  </section>
+
+  <footer>
+    <p>Hola</p>
+  </footer>
 
 <div id="root"></div>
 <script src="main.js" type="module"></script>
