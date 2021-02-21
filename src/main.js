@@ -7,13 +7,13 @@ items.innerHTML = "";
 const templateCard = document.getElementById('template_card').content;
 const fragment = document.createDocumentFragment();
 const pintarCards = datos => {
-datos.forEach(personaje => {
-templateCard.querySelector('img').setAttribute('src', personaje.image)
-templateCard.querySelector('p3').textContent = 'Nombre: ' + personaje.name
-templateCard.querySelector('p4').textContent = 'Estado: ' +personaje.status
-templateCard.querySelector('p5').textContent = 'Especie: ' +personaje.species
-templateCard.querySelector('p6').textContent = 'Género: ' +personaje.gender
-templateCard.querySelector('p7').textContent = 'Origen: ' +personaje.origin.name
+datos.forEach(containerCharacter => {
+templateCard.querySelector('img').setAttribute('src', containerCharacter.image)
+templateCard.querySelector('p3').textContent = 'Nombre: ' + containerCharacter.name
+templateCard.querySelector('p4').textContent = 'Estado: ' +containerCharacter.status
+templateCard.querySelector('p5').textContent = 'Especie: ' +containerCharacter.species
+templateCard.querySelector('p6').textContent = 'Género: ' +containerCharacter.gender
+templateCard.querySelector('p7').textContent = 'Origen: ' +containerCharacter.origin.name
 const clone = templateCard.cloneNode(true)
 fragment.appendChild(clone)
 })
@@ -24,7 +24,7 @@ return pintarCards(datos)
 
 //orderAZ
 
-document.querySelector(".submenu0").onclick = function() {
+document.querySelector(".orderAZ").onclick = function() {
 document.getElementById("titulo").innerHTML = `<p class="tituloOne ">Personajes de A-Z'</p>`
 let datos = data.results;
 datos = orderAZ(datos);
@@ -32,7 +32,7 @@ document.getElementById("card").innerHTML = uniqueTemplate(datos);
 }
 //orderZA
 
-document.querySelector(".submenu1").onclick = function() {
+document.querySelector(".orderZA").onclick = function() {
 document.getElementById("titulo").innerHTML = `<p class="tituloOne ">Personajes de Z-A</p>`
 let datos = data.results;
 datos = orderZA(datos);
@@ -121,17 +121,17 @@ document.getElementById("card").innerHTML = uniqueTemplate(datos);
 
 //Personajes de la Tierra
 
-document.querySelector(".submenu5").onclick = function() {
+document.querySelector(".liveEarth").onclick = function() {
 document.getElementById("titulo").innerHTML = `<p class="tituloOne ">Personajes de la Tierra C-137</p>`
 let datos = data.results;
 datos = tierraOrigin(datos);
 document.getElementById("card").innerHTML = uniqueTemplate(datos);
 }
 
-document.querySelectorAll('.submenu0').forEach(item => {
+document.querySelectorAll('.orderAZ').forEach(item => {
 item.addEventListener('click', event => {
-document.getElementById('segundapagina').style.display = 'block';
-document.getElementById('paginaprincipal').style.display = 'none';
+document.getElementById('secondPage').style.display = 'block';
+document.getElementById('homepage').style.display = 'none';
 //document.getElementById('items').style.display = 'none';
 
 //Write your code hear
@@ -139,10 +139,10 @@ console.log(event);
 })
 }) 
 
-document.querySelectorAll('.submenu1').forEach(item => {
+document.querySelectorAll('.orderZA').forEach(item => {
 item.addEventListener('click', event => {
-document.getElementById('segundapagina').style.display = 'block';
-document.getElementById('paginaprincipal').style.display = 'none';
+document.getElementById('secondPage').style.display = 'block';
+document.getElementById('homepage').style.display = 'none';
 //document.getElementById('items').style.display = 'none';
 //Write your code hear
 console.log(event);
@@ -151,8 +151,8 @@ console.log(event);
 
 document.querySelectorAll('#alien').forEach(item => {
 item.addEventListener('click', event => {
-document.getElementById('segundapagina').style.display = 'block';
-document.getElementById('paginaprincipal').style.display = 'none';
+document.getElementById('secondPage').style.display = 'block';
+document.getElementById('homepage').style.display = 'none';
 //document.getElementById('items').style.display = 'none';
 //Write your code hear
 console.log(event);
@@ -161,8 +161,8 @@ console.log(event);
 
 document.querySelectorAll('#human').forEach(item => {
 item.addEventListener('click', event => {
-document.getElementById('segundapagina').style.display = 'block';
-document.getElementById('paginaprincipal').style.display = 'none';
+document.getElementById('secondPage').style.display = 'block';
+document.getElementById('homepage').style.display = 'none';
 //document.getElementById('items').style.display = 'none';
 //Write your code hear
 console.log(event);
@@ -171,8 +171,8 @@ console.log(event);
 
 document.querySelectorAll('#male').forEach(item => {
 item.addEventListener('click', event => {
-document.getElementById('segundapagina').style.display = 'block';
-document.getElementById('paginaprincipal').style.display = 'none';
+document.getElementById('secondPage').style.display = 'block';
+document.getElementById('homepage').style.display = 'none';
 //document.getElementById('items').style.display = 'none';
 //Write your code hear
 console.log(event);
@@ -181,8 +181,8 @@ console.log(event);
 
 document.querySelectorAll('#female').forEach(item => {
 item.addEventListener('click', event => {
-document.getElementById('segundapagina').style.display = 'block';
-document.getElementById('paginaprincipal').style.display = 'none';
+document.getElementById('secondPage').style.display = 'block';
+document.getElementById('homepage').style.display = 'none';
 //document.getElementById('items').style.display = 'none';
 //Write your code hear
 console.log(event);
@@ -191,8 +191,8 @@ console.log(event);
 
 document.querySelectorAll('#undknown').forEach(item => {
 item.addEventListener('click', event => {
-document.getElementById('segundapagina').style.display = 'block';
-document.getElementById('paginaprincipal').style.display = 'none';
+document.getElementById('secondPage').style.display = 'block';
+document.getElementById('homepage').style.display = 'none';
 //document.getElementById('items').style.display = 'none';
 //Write your code hear
 console.log(event);
@@ -200,8 +200,8 @@ console.log(event);
 })
 document.querySelectorAll('#alive').forEach(item => {
 item.addEventListener('click', event => {
-document.getElementById('segundapagina').style.display = 'block';
-document.getElementById('paginaprincipal').style.display = 'none';
+document.getElementById('secondPage').style.display = 'block';
+document.getElementById('homepage').style.display = 'none';
 //document.getElementById('items').style.display = 'none';
 //Write your code hear
 console.log(event);
@@ -210,17 +210,17 @@ console.log(event);
 
 document.querySelectorAll('#dead').forEach(item => {
 item.addEventListener('click', event => {
-document.getElementById('segundapagina').style.display = 'block';
-document.getElementById('paginaprincipal').style.display = 'none';
+document.getElementById('secondPage').style.display = 'block';
+document.getElementById('homepage').style.display = 'none';
 //document.getElementById('items').style.display = 'none';
 //Write your code hear
 console.log(event);
 })
 })
-document.querySelectorAll('.submenu5').forEach(item => {
+document.querySelectorAll('.liveEarth').forEach(item => {
 item.addEventListener('click', event => {
-document.getElementById('segundapagina').style.display = 'block';
-document.getElementById('paginaprincipal').style.display = 'none';
+document.getElementById('secondPage').style.display = 'block';
+document.getElementById('homepage').style.display = 'none';
 //document.getElementById('items').style.display = 'none';
 //Write your code hear
 console.log(event);
@@ -229,19 +229,19 @@ console.log(event);
 
 document.querySelectorAll('.home').forEach(item => {
 item.addEventListener('click', event => {
-document.getElementById('segundapagina').style.display = 'none';
-document.getElementById('paginaprincipal').style.display = 'block';
+document.getElementById('secondPage').style.display = 'none';
+document.getElementById('homepage').style.display = 'block';
 //document.getElementById('items').style.display = 'none';
-location.reload();
+//location.reload();
 //Write your code hear
 console.log(event);
 })
 }) 
 
-document.querySelector('.boton2').addEventListener(
+document.querySelector('.funFactsButton').addEventListener(
 'click', event =>{
 document.getElementById('tercerapagina').style.display = 'block';
-document.getElementById('paginaprincipal').style.display = 'none';
+document.getElementById('homepage').style.display = 'none';
 console.log(event);
 
 }
@@ -250,23 +250,23 @@ console.log(event);
 
 document.querySelector('#buscador').addEventListener(
   'click', event =>{
-    document.getElementById("paginaprincipal").style.display = 'none';
-    document.getElementById("segundapagina").style.display = 'block';
+    document.getElementById("homepage").style.display = 'none';
+    document.getElementById("secondPage").style.display = 'block';
   
   console.log(event);
   
   }
   )
 
-document.querySelector('#pregunta1').addEventListener(
+document.querySelector('#worlds').addEventListener(
   'mouseover', event =>{
     document.getElementById('ventana').style.display = 'block';
-    document.getElementById("parrafo1").innerHTML = "Hay: " + planeta.length + " mundos"
+    document.getElementById("containerP").innerHTML = "Hay: " + planeta.length + " mundos"
     console.log(event)
   }
 )
 
-document.querySelector('#pregunta1').addEventListener(
+document.querySelector('#worlds').addEventListener(
   'mouseout', event =>{
     document.getElementById('ventana').style.display = 'none';
     console.log(event);
@@ -274,8 +274,8 @@ document.querySelector('#pregunta1').addEventListener(
 )
 
 function cincoPer(cinco) {
-  const prueba = document.getElementById('personaje');
-  const templateP= document.getElementById('template_personajes').content;
+  const prueba = document.getElementById('containerCharacter');
+  const templateP= document.getElementById('templateCharacters').content;
   templateP.innerHTML = "";
   const fragment = document.createDocumentFragment();
   const personajesCards = cinco =>{
@@ -292,18 +292,18 @@ function cincoPer(cinco) {
   return personajesCards(cinco)
     }
 
-document.querySelector('#pregunta2').addEventListener(
+document.querySelector('#mainCharacters').addEventListener(
   'mouseover', event =>{
    
     document.getElementById('ventana').style.display = 'block';
-    //document.getElementsById("parrafo1").innerHTML = "";
+    //document.getElementsById("containerP").innerHTML = "";
     //console.log(cincoPer(cinco))
     document.getElementById("card").innerHTML = "Hola " + cincoPer(cinco)
     
   }
 )
 
-//document.querySelector('#pregunta2').addEventListener(
+//document.querySelector('#mainCharacters').addEventListener(
   //'mouseout', event =>{
     //document.getElementById('ventana').style.display = 'none';
     //console.log(event)

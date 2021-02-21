@@ -6,7 +6,7 @@
     }
     .background-header{
         background-color: rgba(0, 192, 199, 0.788) ;
-        height: 65px;
+        height: 80px;
         width: 100%;
         position: fixed;
         z-index: 100;
@@ -61,19 +61,19 @@
         }
         
         .nav li ul li ul {
-        left: 290px;
+        left: 280px;
         top: 0px;
         }
 
 
-    #paginaprincipal {
+    #homepage {
     background-image: url(picture/fondo1.png);
     background-position: center center;
     background-attachment:fixed;
     background-size: cover;
     text-align: center;
     }
-    .alinear {
+    .aling {
     text-align: center;
     }
     .logo{
@@ -100,7 +100,7 @@
     opacity: 1;
     visibility: visible;
     }
-    .contenedor{
+    .containerModal{
     position: relative;
     padding-top: 100px;
     align-items: center;
@@ -113,7 +113,7 @@
     padding: 50px 50px;
     border-radius: 15px;
     }
-    .contenedor label {
+    .containerModal label {
     position:relative;
     top: 5px;
     right: -220px;
@@ -130,7 +130,7 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
 font-size: 16px;    
 }
-    .boton{
+    .buttonCss{
     font-family: 'Racing Sans One', cursive;
     font-size: 22px;
     color: white;
@@ -146,33 +146,30 @@ font-size: 16px;
         list-style: none;
         }
     
-    .boton:hover{
+    .buttonCss:hover{
         background-color: rgba(166, 255, 0, 0.952);
             color: black;
     }
-    #botonResumen{
+    #summaryButton{
         margin: auto;
     }
-    .article{
+    .backgroundGif{
     background-color:#16131196;
     background-attachment: fixed;
-    /*background-size: 100vw 100vh;
-    width: 1400px;
-    height: 900px;*/
     background-position: center center;
     background-size: cover;
     margin-top: -90px;
     }
-    .probar{
+    .alignGif{
     text-align: center;
     }
-    .boton2{
+    .funFactsButton{
     text-align: center;
     position:relative ;
     z-index: 1;
     top: 265px;
     }
-    .tamaño{
+    .fixingGif{
         margin:center;
         width: 50%;
         height: max-content;
@@ -197,33 +194,15 @@ font-size: 16px;
     
     }
     
-    /*MENU DESPLEGABLE
-    nav {
-    display:block;
-    margin: 0 auto 20px;
-    border: 1px solid rgb(243, 242, 242);
-    font: 16px Tahoma, sans-serif;
-    }
-    
-    nav ul {
-    padding:0;
-    margin: 0;
-    text-align: center;
-    }
-    
-    nav ul ul a { 
-    border-left: none; 
-    border-right: none; 
-    font-size: 14px; 
-    }*/
+
     
     /*Segunda Página*/
     
-    #segundapagina{
+    #secondPage{
     display: none;
     }
     
-    .filtro{
+    .filter{
     background-image: url(picture/fondo2.jpeg);
     background-position: center center;
     background-size: cover;
@@ -246,7 +225,7 @@ font-size: 16px;
     color: blanchedalmond;
     }
     
-    .card__container {
+    .cardContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -291,7 +270,7 @@ font-size: 16px;
     
     /*tercerapagina*/
     
-    .filtro1 {
+    .filter1 {
     background-image: url(picture/fondo1.png);
     background-position: center center;
     background-size: cover;
@@ -317,22 +296,32 @@ font-size: 16px;
         display: none;
     }
     
+    .titleCss{
+        margin-top: 0px;
+        padding-top: 30px
+    }
     .home{
     font-family: 'racing sans';
     font-size: 30px;
-    margin-top: 25px;
+    
     color:#fafd7cff;
     background: black;
     border: 5px #7FFA67;
     border-style: outset;
     box-shadow: 10px 10px 10px #CCD852;
-    padding: 10px 15px;
+  
     border-radius: 10px;
     cursor: pointer;
     }
     
+    .buttonFunFacts{
+        margin-top: 50px;
+        padding-top: 50px;
+    }
     .tituloOne {
     font-family: 'reggae one';
+    
+    padding-top: 30px;
     font-size: 50px;
     color: #CCD852;
     text-shadow: rgb(0,176,199) 0 -2px;
