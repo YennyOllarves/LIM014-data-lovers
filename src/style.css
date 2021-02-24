@@ -6,7 +6,7 @@
     }
     .background-header{
         background-color: rgba(0, 192, 199, 0.788) ;
-        height: 80px;
+        height: 70px;
         width: 100%;
         position: fixed;
         z-index: 100;
@@ -45,7 +45,7 @@
         .nav li ul {
         display:none;
         position: absolute;
-        left: 140px;
+        left: 165px;
         min-width:100px;
         background-color: rgba(0, 192, 199,0.788);
         border-radius: 20px;
@@ -61,7 +61,7 @@
         }
         
         .nav li ul li ul {
-        left: 280px;
+        left: 243px;
         top: 0px;
         }
 
@@ -179,10 +179,25 @@ font-size: 16px;
       margin-left: auto;
       margin-right: auto;
     }
-    .search-form{
+    /*.search-form{
     float: right;
     margin-top: 50px;
     margin-right: 20px;
+    }*/
+    #titulo{
+        position:absolute;
+        right: 0%;
+        margin-top: 0px;
+        } 
+    #textBuscar{
+        width: 40%;
+        height: 30px;
+        border-radius: 10px;
+        background-color:rgba(166, 255, 0, 0.952) ;
+        border-color: rgba(166, 255, 0, 0.952);
+        color:black;
+        text-align: center;
+        margin-top: 100px;
     }
     .flex-top-header{
     flex-wrap: wrap;
@@ -199,14 +214,15 @@ font-size: 16px;
     /*Segunda Página*/
     
     #secondPage{
-    display: none;
-    }
+        display: none;
+        background-image: url(picture/fondo1.png);
+        background-position: center center;
+        background-attachment:fixed;
+        background-size: cover;
+        text-align: center;
+        }
     
     .filter{
-    background-image: url(picture/fondo2.jpeg);
-    background-position: center center;
-    background-size: cover;
-    text-align: center;
     height: 300px;
     }
     
@@ -275,10 +291,35 @@ font-size: 16px;
     background-position: center center;
     background-size: cover;
     text-align: center;
+    background-attachment: fixed;
     height: 635px ;
+    margin-top: 0px;
     }
     #tercerapagina {
     display: none;
+    }
+    .chart{
+        display: flex;
+    }
+    .chartCssLeft{
+       
+        flex-wrap: wrap;
+        font-size: 40px;
+        color: white;
+        text-align: left;
+        width: 500px;
+        height: 500px;
+        margin: 70px;
+        border-color: red;
+    }
+    
+    .chartCss{
+        display: inline-block;
+        font-size: 40px;
+        color: white;
+        width: 500px;
+        height: 500px;
+        margin: 70px;
     }
     .ventana{
         background: #999;
@@ -298,7 +339,7 @@ font-size: 16px;
     
     .titleCss{
         margin-top: 0px;
-        padding-top: 30px
+        padding-top: 0px
     }
     .home{
     font-family: 'racing sans';
@@ -332,4 +373,8 @@ font-size: 16px;
     display: none;
 }
 
-    
+.Chart{
+    display: block; 
+    width: 600px !important;
+    height: 600px !important;
+}

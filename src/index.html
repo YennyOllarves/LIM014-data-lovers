@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 <body>
 <!--El header es estable y estático-->
@@ -16,7 +17,7 @@
   <section class='flex-top-header'>
       <div id="menuDesplegable">
   <ul class="nav"> 
-    <li><a href = "">HOME</a></li>
+    <li><a id="home" href = "">HOME</a></li>
     <li><a href = "">CONOCE A TUS PERSONAJES</a>
   <ul>
   <li> <a class="orderAZ" href="#" title="Ordenados de la A a la Z" >Por su nombre de A-Z</a> </li>
@@ -24,11 +25,11 @@
   <li> <a href="#" >Por su Especie</a>
   <ul>
   <li><a id="human" href="#" title="Personajes Humanos">Humanos</a></li>
-  <li><a id="alien" href="#" title="Personajes AliensS">Aliens</a></li>
+  <li><a id="alien" href="#" title="Personajes Aliens">Aliens</a></li>
   </ul> </li>
   <li > <a  href="#" title="Personajes clasificados por su genero">Por su Género</a>
   <ul>
-  <li><a id="male" href="#" title="Personajes MAsculino">Masculino</a></li>
+  <li><a id="male" href="#" title="Personajes Masculino">Masculino</a></li>
   <li><a id= "female" href="#" title="Personajes Femeninos">Femenino</a></li>
   <li><a id="undknown" href="#" title="Personajes Desconocidos">Desconocido</a></li>
   </ul> </li>
@@ -38,14 +39,10 @@
   <li><a id= "dead" href="#" title="Personajes Muertos">Muertos</a></li>
   </ul> </li>
   <li > <a class="liveEarth" href="#" title="Viven en la tierra">Viven en la Tierra</a> </li>
-  <li><a href = "">TODOS LOS PERSONAJES</a></li>
   </ul>
   </li> 
   </ul>
       </div>
-  <form class="search-form">
-    <button id="buscador" class="botonn" >Busca a tus personajes fav</button>
-    </form> 
   </section>
   </header>
 
@@ -79,11 +76,9 @@
 <!--Segunda Página-->
 <section id='secondPage' style="background-color: black;">
 <header class='filter'>
-  <!--<form class="search-form">
+  <form class="search-form">
     <input id="textBuscar" class="botonn1" name="text" placeholder="Buscar">
     </form> 
-    
-<button class="home" id="home">Home</button>-->
 <div class="titleCss"id="titulo"></div>
 </header>
 <section id="cuerpo">
@@ -107,7 +102,7 @@
 <section class='filter1'>
 <!--<button class="home" id="home">Home</button>-->
 
-<section id="cuerpo" class="buttonFunFacts">
+<!--<section id="cuerpo" class="buttonFunFacts">
 <button id="worlds" class="buttonCss">Total de Mundos</button>
 <button id="mainCharacters" class="buttonCss">Personajes Principales</button>
 <button id="pregunta" class="buttonCss">redirecciona1</button>
@@ -126,8 +121,16 @@
       </div>
   </div>
 </section>
-</section>
+</section>-->
+<div class="chartCssLeft"> 
+  <p class="">PLANETAS</p>
+  <canvas id="numberMundos" class="Chart"></canvas>
+</div>
 
+<div class="chartCss"> 
+  <p class="">TOP PERSONAJES PRINCIPALES</p>
+  <canvas id="topFive" class="Chart"></canvas>
+</div>
 </section>
 
 </section>
@@ -160,6 +163,7 @@
   </footer>
 
 <div id="root"></div>
+<script src="grafico.js" type="module"></script>
 <script src="main.js" type="module"></script>
 </body>
 </html>
