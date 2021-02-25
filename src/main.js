@@ -4,8 +4,11 @@ import {orderAZ, orderZA, genderMale, genderFemale, genderUnknown, speciesHuman,
 function uniqueTemplate (datos){
 const items = document.getElementById('items');
 items.innerHTML = "";
-const templateCard = document.getElementById('template_card').content;
-const fragment = document.createDocumentFragment();
+console.log(items);
+const templateCard = document.getElementById('template_card1').content;
+console.log(templateCard);
+const fragment = document.createDocumentFragment("card1");
+console.log(fragment);
 const pintarCards = datos => {
 datos.forEach(containerCharacter => {
 templateCard.querySelector('img').setAttribute('src', containerCharacter.image)
@@ -26,20 +29,28 @@ return pintarCards(datos)
 
 document.querySelector(".orderAZ").onclick = function() {
 document.getElementById("titulo").innerHTML = `<p class="tituloOne ">Personajes de A-Z'</p>`
-let datos = data.results;
-datos = orderAZ(datos);
-//document.getElementById("template_card").innerHTML ="";
-document.getElementById("card").innerHTML = uniqueTemplate(datos);
 }
+
+document.getElementById("orderAZ").addEventListener(
+  "click", function () {
+
+    let datos = data.results;
+    datos = orderAZ(datos);
+    document.getElementById("card1").innerHTML = uniqueTemplate(datos);
+    })
 //orderZA
 
 document.querySelector(".orderZA").onclick = function() {
 document.getElementById("titulo").innerHTML = `<p class="tituloOne ">Personajes de Z-A</p>`
-let datos = data.results;
-datos = orderZA(datos);
-//document.getElementById("template_card").innerHTML ="";
-document.getElementById("card").innerHTML = uniqueTemplate(datos);
 }
+
+document.getElementById("orderZA").addEventListener(
+  "click", function () {
+
+    let datos = data.results;
+datos = orderZA(datos);
+document.getElementById("card1").innerHTML = uniqueTemplate(datos);
+    })
 
 //species
 
@@ -56,14 +67,14 @@ document.getElementById("human").addEventListener(
 
 let datos = data.results;
 datos = speciesHuman(datos);
-document.getElementById("card").innerHTML = uniqueTemplate(datos);
+document.getElementById("card1").innerHTML = uniqueTemplate(datos);
 }) 
 
 document.getElementById("alien").addEventListener(
 "click" , function () {
 let datos = data.results;
 datos= speciesAlien(datos);
-document.getElementById("card").innerHTML = uniqueTemplate(datos);
+document.getElementById("card1").innerHTML = uniqueTemplate(datos);
 })
 
 //gender
@@ -83,19 +94,19 @@ document.getElementById("male").addEventListener(
 "click" , function () {
 let datos = data.results;
 datos= genderMale(datos);
-document.getElementById("card").innerHTML = uniqueTemplate(datos);
+document.getElementById("card1").innerHTML = uniqueTemplate(datos);
 })
 document.getElementById("female").addEventListener(
 "click" , function () {
 let datos = data.results;
 datos= genderFemale(datos);
-document.getElementById("card").innerHTML = uniqueTemplate(datos);
+document.getElementById("card1").innerHTML = uniqueTemplate(datos);
 })
 document.getElementById("undknown").addEventListener(
 "click" , function () {
 let datos = data.results;
 datos= genderUnknown(datos);
-document.getElementById("card").innerHTML = uniqueTemplate(datos);
+document.getElementById("card1").innerHTML = uniqueTemplate(datos);
 })
 
 //status
@@ -112,13 +123,13 @@ document.getElementById("alive").addEventListener(
 "click" , function () {
 let datos = data.results;
 datos= statusAlive(datos);
-document.getElementById("card").innerHTML = uniqueTemplate(datos);
+document.getElementById("card1").innerHTML = uniqueTemplate(datos);
 }) 
 document.getElementById("dead").addEventListener(
 "click" , function () {
 let datos = data.results;
 datos= statusDead(datos);
-document.getElementById("card").innerHTML = uniqueTemplate(datos);
+document.getElementById("card1").innerHTML = uniqueTemplate(datos);
 })
 
 //Personajes de la Tierra
@@ -127,7 +138,7 @@ document.querySelector(".liveEarth").onclick = function() {
 document.getElementById("titulo").innerHTML = `<p class="tituloOne ">Personajes de la Tierra C-137</p>`
 let datos = data.results;
 datos = tierraOrigin(datos);
-document.getElementById("card").innerHTML = uniqueTemplate(datos);
+document.getElementById("card1").innerHTML = uniqueTemplate(datos);
 }
 
 //Manipulacion del DOM

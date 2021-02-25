@@ -20,8 +20,8 @@
     <li><a id="home" href = "">HOME</a></li>
     <li><a href = "">CONOCE A TUS PERSONAJES</a>
   <ul>
-  <li> <a class="orderAZ" href="#" title="Ordenados de la A a la Z" >Por su nombre de A-Z</a> </li>
-  <li> <a class="orderZA" href="#" title="Ordenados de la Z a la A">Por su nombre de Z-A</a> </li>
+  <li> <a id="orderAZ" class="orderAZ" href="#" title="Ordenados de la A a la Z" >Por su nombre de A-Z</a> </li>
+  <li> <a id="orderZA" class="orderZA" href="#" title="Ordenados de la Z a la A">Por su nombre de Z-A</a> </li>
   <li> <a href="#" >Por su Especie</a>
   <ul>
   <li><a id="human" href="#" title="Personajes Humanos">Humanos</a></li>
@@ -81,20 +81,8 @@
     </form> 
 <div class="titleCss" id="titulo"></div>
 </header>
-<section id="cuerpo">
 <div id="items" class="cardContainer">
-<template id="template_card">
-<div class="card" id="card">
-<img alt="imagen de personaje" witdth="150px" height="150px"><br>
-<p3 class="p3">name: </p3><br>
-<p4>status: </p4><br>
-<p5>species: </p5><br>
-<p6>gender: </p6><br>
-<p7>origin: </p7><br>
 </div>
-</template>
-</div>
-</section>
 </section>
 
 <!--TerceraPágina-->
@@ -115,13 +103,9 @@
 
 <!--Cuarta Pagina-->
 <section id="cuartapagina">
-  <header class="filter">
-  <div class="titleCss" id="titulo1"></div>
-  </header>
-  <section id="cuerpo">
-  <div id="items" class="cardContainer">
-  <template id="template_card">
-  <div class="card" id="card">
+  <section id="cuerpo1">
+  <template id="template_card1">
+  <div class="card" id="card1">
   <img alt="" witdth="150px" height="150px"><br>
   <p3 class="p3">name: </p3><br>
   <p4>status: </p4><br>
@@ -130,9 +114,8 @@
   <p7>origin: </p7><br>
   </div>
   </template>
-  </div>
   </section>
-  </section>
+</section>
 
   <footer style="background-color: blanchedalmond;">
     <p style="color: black;">HOLA AQUI VA EL FOOTER</p>
