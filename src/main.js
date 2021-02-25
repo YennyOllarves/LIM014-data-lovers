@@ -3,7 +3,7 @@ import {orderAZ, orderZA, genderMale, genderFemale, genderUnknown, speciesHuman,
 
 function uniqueTemplate (datos){
 const items = document.getElementById('items');
-items.innerHTML ='';
+items.innerHTML = "";
 const templateCard = document.getElementById('template_card').content;
 const fragment = document.createDocumentFragment();
 const pintarCards = datos => {
