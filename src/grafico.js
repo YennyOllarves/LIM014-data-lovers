@@ -13,14 +13,15 @@ top5.forEach(elements=>{
 })
 
 let ctx = document.getElementById("topFive").getContext("2d");
-var Top = new Chart(ctx,{
+// eslint-disable-next-line no-undef
+new Chart(ctx,{
   type:"bar",
   data:{
     labels: nombreCinco,
     datasets:[{
-      label: "Top Five",
+      label: "Número de episodios de aparicion",
       data: numeroEpisodios,
-      backgroundColor: ["rgba(66,134,244)","rgba(66,134,50)","rgba(3,134,244)","rgba(66,80,244)","rgba(20,134,244)"
+      backgroundColor: ["rgba(66,134,244)","rgb(178, 23, 235)","rgb(247, 27, 211)","rgb(255, 68, 0)","rgb(0, 204, 255)"
     ]
     }]
   },
@@ -29,7 +30,14 @@ var Top = new Chart(ctx,{
     scales: {
       yAxes:[{
         ticks:{
-          beginAtZero:true
+          beginAtZero:true,
+          fontColor:["rgba(255,255,255)"],
+        }
+      }],
+      xAxes:[{
+        ticks:{
+          fontColor: ["rgba(255,255,255)"],
+          fontSize: ["13"]
         }
       }]
     }
@@ -45,20 +53,39 @@ arrayMundos.forEach(numero=>{
 })
 let nombresPlanetas = Object.keys(repetidos);
 let personajesDelPlaneta = Object.values(repetidos);
-console.log(repetidos);
-console.log(nombresPlanetas);
-console.log(personajesDelPlaneta);
+
 
 let mundos = document.getElementById("numberMundos").getContext("2d");
-let World = new Chart(mundos,{
-  type:"pie",
+// eslint-disable-next-line no-undef
+new Chart(mundos,{
+  type:"line",
   data:{
     labels: nombresPlanetas,
     datasets:[{
-      label: "Aproximadamente hay " + nombresPlanetas.length,
+      label: "Número de personajes originarios de este  planeta",
       data: personajesDelPlaneta,
+      fill: false,
+      fontColor: ["rgba(255,255,255)"],
+      borderColor: ["rgba(66,134,244)"],
       backgroundColor: ["rgba(66,134,244)","rgba(66,134,50)","rgba(3,134,244)","rgba(66,80,244)","rgba(20,134,244)"
     ]
     }]
+  },
+  options: {
+
+    scales: {
+      yAxes:[{
+        ticks:{
+          fontColor: ["rgba(255,255,255)"],
+          beginAtZero:true
+        }
+      }],
+      xAxes:[{
+        ticks:{
+          fontColor: ["rgba(255,255,255)"],
+          fontSize: ["13"]
+        }
+      }]
+    }
   }
 });

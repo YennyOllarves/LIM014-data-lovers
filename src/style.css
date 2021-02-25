@@ -6,7 +6,7 @@
     }
     .background-header{
         background-color: rgba(0, 192, 199, 0.788) ;
-        height: 70px;
+        height: 80px;
         width: 100%;
         position: fixed;
         z-index: 100;
@@ -238,7 +238,9 @@ font-size: 16px;
     border-style: double;
     border-radius: 10px;
     text-align: center;
-    color: blanchedalmond;
+    color: white;
+    font-size: 17px;
+    -webkit-text-stroke: black 0.6px;
     }
     
     .cardContainer {
@@ -292,34 +294,37 @@ font-size: 16px;
     background-size: cover;
     text-align: center;
     background-attachment: fixed;
-    height: 635px ;
-    margin-top: 0px;
     }
     #tercerapagina {
     display: none;
     }
-    .chart{
-        display: flex;
+    .Chart{
+        display: block; 
+        background-color: rgba(115, 255, 0, 0.747);
+        border-radius: 20px;
     }
     .chartCssLeft{
        
         flex-wrap: wrap;
         font-size: 40px;
         color: white;
-        text-align: left;
-        width: 500px;
-        height: 500px;
-        margin: 70px;
+        text-align: center;
         border-color: red;
+        width: 900px ;
+        height: 500px ;
+        padding: 30px ;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .chartCss{
         display: inline-block;
         font-size: 40px;
         color: white;
-        width: 500px;
-        height: 500px;
-        margin: 70px;
+        width: 700px !important;
+        height: 500px !important;
+        padding: 20px !important;
+        margin-top: 100px;
     }
     .ventana{
         background: #999;
@@ -341,20 +346,9 @@ font-size: 16px;
         margin-top: 0px;
         padding-top: 0px
     }
-    .home{
-    font-family: 'racing sans';
-    font-size: 30px;
-    
-    color:#fafd7cff;
-    background: black;
-    border: 5px #7FFA67;
-    border-style: outset;
-    box-shadow: 10px 10px 10px #CCD852;
-  
-    border-radius: 10px;
-    cursor: pointer;
-    }
-    
+.planet{
+    padding-top: 80px;
+}   
     .buttonFunFacts{
         margin-top: 50px;
         padding-top: 50px;
@@ -373,8 +367,3 @@ font-size: 16px;
     display: none;
 }
 
-.Chart{
-    display: block; 
-    width: 600px !important;
-    height: 600px !important;
-}
