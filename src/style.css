@@ -348,21 +348,7 @@ font-size: 16px;
     }
 .planet{
     padding-top: 80px;
-}
-    .home{
-    font-family: 'racing sans';
-    font-size: 30px;
-    
-    color:#fafd7cff;
-    background: black;
-    border: 5px #7FFA67;
-    border-style: outset;
-    box-shadow: 10px 10px 10px #CCD852;
-  
-    border-radius: 10px;
-    cursor: pointer;
-    }
-    
+}   
     .buttonFunFacts{
         margin-top: 50px;
         padding-top: 50px;

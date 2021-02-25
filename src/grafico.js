@@ -53,9 +53,7 @@ arrayMundos.forEach(numero=>{
 })
 let nombresPlanetas = Object.keys(repetidos);
 let personajesDelPlaneta = Object.values(repetidos);
-console.log(repetidos);
-console.log(nombresPlanetas);
-console.log(personajesDelPlaneta);
+
 
 let mundos = document.getElementById("numberMundos").getContext("2d");
 // eslint-disable-next-line no-undef

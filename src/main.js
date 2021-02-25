@@ -3,14 +3,14 @@ import {orderAZ, orderZA, genderMale, genderFemale, genderUnknown, speciesHuman,
 
 function uniqueTemplate (datos){
 const items = document.getElementById('items');
-items.innerHTML = "";
+items.innerHTML ='';
 const templateCard = document.getElementById('template_card').content;
 const fragment = document.createDocumentFragment();
 const pintarCards = datos => {
 datos.forEach(containerCharacter => {
 templateCard.querySelector('img').setAttribute('src', containerCharacter.image)
 templateCard.querySelector('p3').textContent = 'Nombre: ' + containerCharacter.name
-templateCard.querySelector('p4').textContent = 'Estado: ' + containerCharacter.status
+templateCard.querySelector('p4').textContent = 'Estado: ' +containerCharacter.status
 templateCard.querySelector('p5').textContent = 'Especie: ' +containerCharacter.species
 templateCard.querySelector('p6').textContent = 'Género: ' +containerCharacter.gender
 templateCard.querySelector('p7').textContent = 'Origen: ' +containerCharacter.origin.name
@@ -28,6 +28,7 @@ document.querySelector(".orderAZ").onclick = function() {
 document.getElementById("titulo").innerHTML = `<p class="tituloOne ">Personajes de A-Z'</p>`
 let datos = data.results;
 datos = orderAZ(datos);
+//document.getElementById("template_card").innerHTML ="";
 document.getElementById("card").innerHTML = uniqueTemplate(datos);
 }
 //orderZA
@@ -36,6 +37,7 @@ document.querySelector(".orderZA").onclick = function() {
 document.getElementById("titulo").innerHTML = `<p class="tituloOne ">Personajes de Z-A</p>`
 let datos = data.results;
 datos = orderZA(datos);
+//document.getElementById("template_card").innerHTML ="";
 document.getElementById("card").innerHTML = uniqueTemplate(datos);
 }
 
@@ -128,105 +130,97 @@ datos = tierraOrigin(datos);
 document.getElementById("card").innerHTML = uniqueTemplate(datos);
 }
 
-//Llamados por el DOM 
+//Manipulacion del DOM
 
 document.querySelectorAll('.orderAZ').forEach(item => {
-item.addEventListener('click', event => {
+item.addEventListener('click', () => {
 document.getElementById('secondPage').style.display = 'block';
 document.getElementById('homepage').style.display = 'none';
-console.log(event);
+
 })
 }) 
 
 document.querySelectorAll('.orderZA').forEach(item => {
-item.addEventListener('click', event => {
+item.addEventListener('click', () => {
 document.getElementById('secondPage').style.display = 'block';
 document.getElementById('homepage').style.display = 'none';
-console.log(event);
+
 })
 })
 
 document.querySelectorAll('#alien').forEach(item => {
-item.addEventListener('click', event => {
+item.addEventListener('click', () => {
 document.getElementById('secondPage').style.display = 'block';
 document.getElementById('homepage').style.display = 'none';
-console.log(event);
 })
 }) 
 
 document.querySelectorAll('#human').forEach(item => {
-item.addEventListener('click', event => {
+item.addEventListener('click', () => {
 document.getElementById('secondPage').style.display = 'block';
 document.getElementById('homepage').style.display = 'none';
-console.log(event);
 })
 })
 
 document.querySelectorAll('#male').forEach(item => {
-item.addEventListener('click', event => {
+item.addEventListener('click', ()=> {
 document.getElementById('secondPage').style.display = 'block';
 document.getElementById('homepage').style.display = 'none';
-console.log(event);
 })
 })
 
 document.querySelectorAll('#female').forEach(item => {
-item.addEventListener('click', event => {
+item.addEventListener('click', () => {
 document.getElementById('secondPage').style.display = 'block';
 document.getElementById('homepage').style.display = 'none';
-console.log(event);
+
 })
 })
 
 document.querySelectorAll('#undknown').forEach(item => {
-item.addEventListener('click', event => {
+item.addEventListener('click', () => {
 document.getElementById('secondPage').style.display = 'block';
 document.getElementById('homepage').style.display = 'none';
-console.log(event);
+
 })
 })
 document.querySelectorAll('#alive').forEach(item => {
-item.addEventListener('click', event => {
+item.addEventListener('click', () => {
 document.getElementById('secondPage').style.display = 'block';
 document.getElementById('homepage').style.display = 'none';
-console.log(event);
 })
 })
 
 document.querySelectorAll('#dead').forEach(item => {
-item.addEventListener('click', event => {
+item.addEventListener('click', () => {
 document.getElementById('secondPage').style.display = 'block';
 document.getElementById('homepage').style.display = 'none';
 
-console.log(event);
 })
 })
 document.querySelectorAll('.liveEarth').forEach(item => {
-item.addEventListener('click', event => {
+item.addEventListener('click', () => {
 document.getElementById('secondPage').style.display = 'block';
 document.getElementById('homepage').style.display = 'none';
-
-console.log(event);
 })
 }) 
 
-document.querySelectorAll('#home').forEach(item => {
-item.addEventListener('click', event => {
+document.querySelectorAll('.home').forEach(item => {
+item.addEventListener('click', () => {
 document.getElementById('secondPage').style.display = 'none';
 document.getElementById('homepage').style.display = 'block';
-
-console.log(event);
 })
 }) 
 
 document.querySelector('.funFactsButton').addEventListener(
-'click', event =>{
+'click', () =>{
 document.getElementById('tercerapagina').style.display = 'block';
 document.getElementById('homepage').style.display = 'none';
-console.log(event);
 
 }
 )
+
+
 
 document.getElementById("textBuscar").addEventListener(
   "keyup", function () {
