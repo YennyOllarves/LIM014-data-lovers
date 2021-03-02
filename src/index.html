@@ -9,26 +9,27 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 <body>
 <!--El header es estable y estático-->
-<header class='background-header'>
-  <section class='flex-top-header'>
+<header class="background-header">
+  <section class="flex-top-header">
       <div id="menuDesplegable">
   <ul class="nav"> 
-    <li><a href = "">HOME</a></li>
-    <li><a href = "">CONOCE A TUS PERSONAJES</a>
+    <li><a class="home" id="home" href = "">HOME</a></li>
+    <li><a class="characters" href = "">CONOCE A TUS PERSONAJES</a>
   <ul>
-  <li> <a class="orderAZ" href="#" title="Ordenados de la A a la Z" >Por su nombre de A-Z</a> </li>
-  <li> <a class="orderZA" href="#" title="Ordenados de la Z a la A">Por su nombre de Z-A</a> </li>
+  <li> <a id="orderAZ" class="orderAZ" href="#" title="Ordenados de la A a la Z" >Por su nombre de A-Z</a> </li>
+  <li> <a id="orderZA" class="orderZA" href="#" title="Ordenados de la Z a la A">Por su nombre de Z-A</a> </li>
   <li> <a href="#" >Por su Especie</a>
   <ul>
   <li><a id="human" href="#" title="Personajes Humanos">Humanos</a></li>
-  <li><a id="alien" href="#" title="Personajes AliensS">Aliens</a></li>
+  <li><a id="alien" href="#" title="Personajes Aliens">Aliens</a></li>
   </ul> </li>
   <li > <a  href="#" title="Personajes clasificados por su genero">Por su Género</a>
   <ul>
-  <li><a id="male" href="#" title="Personajes MAsculino">Masculino</a></li>
+  <li><a id="male" href="#" title="Personajes Masculino">Masculino</a></li>
   <li><a id= "female" href="#" title="Personajes Femeninos">Femenino</a></li>
   <li><a id="undknown" href="#" title="Personajes Desconocidos">Desconocido</a></li>
   </ul> </li>
@@ -38,20 +39,16 @@
   <li><a id= "dead" href="#" title="Personajes Muertos">Muertos</a></li>
   </ul> </li>
   <li > <a class="liveEarth" href="#" title="Viven en la tierra">Viven en la Tierra</a> </li>
-  <li><a href = "">TODOS LOS PERSONAJES</a></li>
   </ul>
   </li> 
   </ul>
       </div>
-  <form class="search-form">
-    <button id="buscador" class="botonn" >Busca a tus personajes fav</button>
-    </form> 
   </section>
   </header>
 
 <section  id = "homepage">
-<div class="aling">
-<img class='logo flex-logo' src="picture/logo.png">
+<div class="alignLogo">
+<img class="logo flex-logo" src="picture/logo.png">
 </div>
 <input type="checkbox" id="btn-modal">
 <br>
@@ -67,83 +64,51 @@
 
 
 <div class="funFactsButton">
-<label class= 'buttonCss flex-btn' >¡ DATOS CURIOSOS !</label>
+<label class= "buttonCss flex-btn">¡ DATOS CURIOSOS !</label>
 </div>
 <section class="alignGif">
-<div class='backgroundGif'>
+<div class="backgroundGif">
 <img class="fixingGif" src="picture/giphy.gif" alt="">
 </div> 
 </section>
 </section>
 
 <!--Segunda Página-->
-<section id='secondPage' style="background-color: black;">
-<header class='filter'>
-  <!--<form class="search-form">
+<section id="secondPage" style="background-color: black;">
+<header class="filter">
+  <form class="search-form">
     <input id="textBuscar" class="botonn1" name="text" placeholder="Buscar">
     </form> 
-    
-<button class="home" id="home">Home</button>-->
-<div class="titleCss"id="titulo"></div>
+<div class="titleCss" id="titulo"></div>
 </header>
-<section id="cuerpo">
 <div id="items" class="cardContainer">
-<template id="template_card">
-<div class="card" id="card">
-<img src="" alt="" witdth="150px" height="150px"><br>
-<p3 class="p3">name: </p3><br>
-<p4>status: </p4><br>
-<p5>species: </p5><br>
-<p6>gender: </p6><br>
-<p7>origin: </p7><br>
 </div>
-</template>
-</div>
-</section>
 </section>
 
 <!--TerceraPágina-->
-<section id='tercerapagina' class="titleCss">
-<section class='filter1'>
-<!--<button class="home" id="home">Home</button>-->
-
-<section id="cuerpo" class="buttonFunFacts">
-<button id="worlds" class="buttonCss">Total de Mundos</button>
-<button id="mainCharacters" class="buttonCss">Personajes Principales</button>
-<button id="pregunta" class="buttonCss">redirecciona1</button>
-<button id= "pregunta" class="buttonCss">redirecciona2</button>
-<div id="ventana" class="ventana">
-    <p id="containerP"></p>
-    <div id="containerCharacter" class="cardContainer">
-      <template id="templateCharacters">
-      <div class="card" id="card">
-      <img src="" alt="" witdth="150px" height="150px"><br>
-      <p3>name: </p3><br>
-      <p4>Total de mundos: </p4><br>
-      
-      </div>
-      </template>
-      </div>
+<section id="tercerapagina" >
+<section class="filter1">
+  
+  <div class="chartCss"> 
+    <p class="planeta" style="text-align: center;">PLANETAS</p>
+    <br>
+    <canvas id="numberMundos"  class="Chart "></canvas>
   </div>
-</section>
-</section>
+<div class="chartCss"> 
+  <p class="titleName">TOP PERSONAJES PRINCIPALES</p>
+  <canvas id="topFive" class="Chart"></canvas>
+</div>
 
 </section>
 
 </section>
 
 <!--Cuarta Pagina-->
-<section id='cuartapagina' style="background-color: black;">
-  <header class='filter'>
-  <!--<button class="home" id="home">Home</button>-->
-  <div class="titleCss"id="titulo"></div>
-  
-  </header>
-  <section id="cuerpo">
-  <div id="items" class="cardContainer">
-  <template id="template_card">
-  <div class="card" id="card">
-  <img src="" alt="" witdth="150px" height="150px"><br>
+<section id="cuartapagina">
+  <section id="cuerpo1">
+  <template id="template_card1">
+  <div class="card" id="card1">
+  <img class="imgSize" alt="" witdth="150px" height="150px"><br>
   <p3 class="p3">name: </p3><br>
   <p4>status: </p4><br>
   <p5>species: </p5><br>
@@ -151,15 +116,15 @@
   <p7>origin: </p7><br>
   </div>
   </template>
-  </div>
   </section>
-  </section>
+</section>
 
-  <footer style="background-color: blanchedalmond;">
+ <!--<footer style="background-color: blanchedalmond;">
     <p style="color: black;">HOLA AQUI VA EL FOOTER</p>
-  </footer>
+  </footer>-->
 
 <div id="root"></div>
+<script src="grafico.js" type="module"></script>
 <script src="main.js" type="module"></script>
 </body>
 </html>

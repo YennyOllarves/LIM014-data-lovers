@@ -1,4 +1,3 @@
-
 //orderA-Z
 export const orderAZ = (datos) => {
   let ordenar = datos.sort((a,b) => {
@@ -73,9 +72,47 @@ export const tierraOrigin = (datos) => {
   return (tierraPersonaje)
 } 
 
-//Calculo
+//Input Buscador
 
 export const Buscadorr = (datos,input) => {
-  let malePersonaje = datos.filter(personaje => personaje.name.startsWith(input) === true);
-  return (malePersonaje)
+  let buscarTexto = datos.filter(personaje => personaje.name.startsWith(input) === true);
+  return (buscarTexto)
+}
+
+//Calculo Estadistico
+
+export const numberWorlds = (datos) =>{
+  let allWorlds = [];
+  let planet = [];
+  datos.forEach(element => {
+    const objOrigin = element.origin;
+    const valorObjOrigin = Object.values(objOrigin);
+    allWorlds.push(valorObjOrigin[0]);
+  })
+  allWorlds.map(mundo=>{
+    if (planet.includes(mundo) === false ){
+      planet.push(mundo)
+    }
+  })
+  return allWorlds;
+}
+
+export const mainCharacters = (datos) =>{
+  let allnewObjetos = [];
+  let topFive = [];
+  datos.forEach(elemento => {
+    const name = elemento.name;
+    const objEpisodes = elemento.episode;
+    const numberEpisodes = objEpisodes.length
+    const image = elemento.image;
+    
+    const combinado = {image, name, objEpisodes, numberEpisodes}
+    allnewObjetos.push(combinado)
+  })
+   allnewObjetos.map(element => {
+   if(element.numberEpisodes > 20) {
+    topFive.push(element)
+  }
+})
+return topFive;
 }
