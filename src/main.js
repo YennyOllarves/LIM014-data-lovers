@@ -28,7 +28,7 @@ return pintarCards(datos)
 //orderAZ
 
 document.querySelector(".orderAZ").onclick = function() {
-document.getElementById("titulo").innerHTML = `<p class="tituloOne ">Personajes de A-Z'</p>`
+document.getElementById("titulo").innerHTML = `<p class="tituloOne ">PERSONAJES ORDENADOS DE A-Z</p>`
 }
 
 document.getElementById("orderAZ").addEventListener(
@@ -41,7 +41,7 @@ document.getElementById("card1").innerHTML = uniqueTemplate(datos);
 //orderZA
 
 document.querySelector(".orderZA").onclick = function() {
-document.getElementById("titulo").innerHTML = `<p class="tituloOne ">Personajes de Z-A</p>`
+document.getElementById("titulo").innerHTML = `<p class="tituloOne ">PERSONAJES ORDENADOS DE Z-A</p>`
 }
 
 document.getElementById("orderZA").addEventListener(
@@ -55,11 +55,11 @@ document.getElementById("card1").innerHTML = uniqueTemplate(datos);
 //species
 
 document.querySelector("#human").onclick = function() {
-document.getElementById("titulo").innerHTML = `<p class="tituloOne ">Personajes por su especie</p>`
+document.getElementById("titulo").innerHTML = `<p class="tituloOne ">PERSONAJES POR SU ESPECIE</p>`
 }
 
 document.querySelector("#alien").onclick = function() {
-document.getElementById("titulo").innerHTML = `<p class="tituloOne "> Personajes por su especie</p>`
+document.getElementById("titulo").innerHTML = `<p class="tituloOne ">PERSONAJES POR SU ESPECIE</p>`
 }
 
 document.getElementById("human").addEventListener(
@@ -80,14 +80,14 @@ document.getElementById("card1").innerHTML = uniqueTemplate(datos);
 //gender
 
 document.querySelector("#male").onclick = function() {
-document.getElementById("titulo").innerHTML = `<p class="tituloOne ">Personajes masculinos</p>`
+document.getElementById("titulo").innerHTML = `<p class="tituloOne ">PERSONAJES MASCULINOS</p>`
 }
 
 document.querySelector("#female").onclick = function() {
-document.getElementById("titulo").innerHTML = `<p class="tituloOne ">Personajes femeninos</p>`
+document.getElementById("titulo").innerHTML = `<p class="tituloOne ">PERSONAJES FEMENINOS</p>`
 }
 document.querySelector("#undknown").onclick = function() {
-document.getElementById("titulo").innerHTML = `<p class="tituloOne ">Personajes con genero desconocido'</p>`
+document.getElementById("titulo").innerHTML = `<p class="tituloOne ">PERSONAJES CON GÉNERO DESCONOCIDO</p>`
 }
 
 document.getElementById("male").addEventListener(
@@ -112,11 +112,11 @@ document.getElementById("card1").innerHTML = uniqueTemplate(datos);
 //status
 
 document.querySelector("#alive").onclick = function() {
-document.getElementById("titulo").innerHTML = `<p class="tituloOne ">Personajes vivos</p>`
+document.getElementById("titulo").innerHTML = `<p class="tituloOne ">PERSONAJES VIVOS</p>`
 }
 
 document.querySelector("#dead").onclick = function() {
-document.getElementById("titulo").innerHTML = `<p class="tituloOne ">Personajes muertos</p>`
+document.getElementById("titulo").innerHTML = `<p class="tituloOne ">PERSONAJES MUERTOS</p>`
 }
 
 document.getElementById("alive").addEventListener(
@@ -135,7 +135,7 @@ document.getElementById("card1").innerHTML = uniqueTemplate(datos);
 //Personajes de la Tierra
 
 document.querySelector(".liveEarth").onclick = function() {
-document.getElementById("titulo").innerHTML = `<p class="tituloOne ">Personajes de la Tierra C-137</p>`
+document.getElementById("titulo").innerHTML = `<p class="tituloOne ">PERSONAJES DE LA TIERRA C-137</p>`
 let datos = data.results;
 datos = tierraOrigin(datos);
 document.getElementById("card1").innerHTML = uniqueTemplate(datos);
