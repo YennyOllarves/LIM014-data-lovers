@@ -2,68 +2,52 @@
     margin: 0rem;
     font-family: 'Racing Sans One', cursive;
     background-color: #161311;
-
+    
     }
     .background-header{
-        background-color: rgba(0, 192, 199, 0.788) ;
-        height: 80px;
-        width: 100%;
-        position: fixed;
-        z-index: 100;
+    background-color: rgba(0, 192, 199, 0.788) ;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
     }
-        .nav li a {
-        background-color: rgba(0, 192, 199, 0);
-        color: white;
-        -webkit-text-stroke: black 0.5px;
-        font-size: 24px;
-        text-decoration:none;
-        border-radius: 30px;
-        padding: 10px 15px;
-        display:block;
-        }
-        
-        .nav li a:hover {
-            background-color: rgba(166, 255, 0, 0.952);
-            color: black;
-        }
-        
-        .nav > li {
-        float: left;
-        
-        }
-        
-        .nav li ul {
-        display:none;
-        position: absolute;
-<<<<<<< HEAD
-        left: 145px;
-=======
-        left: 165px;
->>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
-        min-width:100px;
-        background-color: rgba(0, 192, 199,0.788);
-        border-radius: 20px;
-        padding: 0px 0px;
-        }
-        
-        .nav li:hover >ul {
-        display:block;
-        }
-        
-        .nav li ul li{
-        position: relative;
-        }
-        
-        .nav li ul li ul {
-<<<<<<< HEAD
-        left: 260px;
-=======
-        left: 243px;
->>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
-        top: 0px;
-        }
-
-
+    .nav li a {
+    background-color: rgba(0, 192, 199, 0);
+    color: white;
+    -webkit-text-stroke: black 0.5px;
+    font-size: 24px;
+    text-decoration:none;
+    border-radius: 30px;
+    padding: 10px 15px;
+    display:block;
+    }
+    .nav li a:hover {
+    background-color: rgba(166, 255, 0, 0.952);
+    color: black;
+    }
+    .nav > li {
+    float: left;
+    }
+    .nav li ul {
+    display:none;
+    position: absolute;
+    left: 145px;
+    min-width:100px;
+    background-color: rgba(0, 192, 199,0.788);
+    border-radius: 20px;
+    padding: 0px 0px;
+    }
+    .nav li:hover >ul {
+    display:block;
+    }
+    .nav li ul li{
+    position: relative;
+    }
+    .nav li ul li ul {
+    left: 260px;
+    top: 0px;
+    }
+    
     #homepage {
     background-image: url(picture/fondo1.png);
     background-position: center center;
@@ -72,7 +56,7 @@
     text-align: center;
     }
     .alignLogo {
-        display: flex;
+    display: flex;
     }
     .logo{
     margin:center;
@@ -83,7 +67,7 @@
     margin-left: auto;
     margin-right: auto;
     }
-
+    
     .modal {
     text-align: center;
     position:relative; 
@@ -118,15 +102,13 @@
     font-size: 24px;
     cursor:pointer;
     }
-    
     #btn-modal {
     display: none;
     }
-    
     .contenido h2{
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;    
-}
+    font-size: 20px; 
+    }
     .buttonCss{
     font-family: 'Racing Sans One', cursive;
     font-size: 35px;
@@ -140,15 +122,14 @@
     cursor: pointer;
     }
     li, ol {
-        list-style: none;
-        }
-    
+    list-style: none;
+    }
     .buttonCss:hover{
-        background-color: rgba(166, 255, 0, 0.952);
-            color: black;
+    background-color: rgba(166, 255, 0, 0.952);
+    color: black;
     }
     #summaryButton{
-        margin: auto;
+    margin: auto;
     }
     .backgroundGif{
     background-color:#16131196;
@@ -167,38 +148,29 @@
     top: 180px;
     }
     .fixingGif{
-        margin:center;
-        width: 40%;
-        height: 400px;
-        padding-top: 40px;
-        padding-bottom: 100px;
-        display: block;
-      margin-left: auto;
-      margin-right: auto;
+    margin:center;
+    width: 40%;
+    height: 400px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     }
-<<<<<<< HEAD
-   
-=======
-    /*.search-form{
-    float: right;
-    margin-top: 50px;
-    margin-right: 20px;
-    }*/
->>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
     #titulo{
-        position:absolute;
-        right: 0%;
-        margin-top: 0px;
-        } 
+    position:absolute;
+    right: 0%;
+    margin-top: 0px;
+    } 
     #textBuscar{
-        width: 40%;
-        height: 30px;
-        border-radius: 10px;
-        background-color:rgba(166, 255, 0, 0.952) ;
-        border-color: rgba(166, 255, 0, 0.952);
-        color:black;
-        text-align: center;
-        margin-top: 100px;
+    width: 40%;
+    height: 30px;
+    border-radius: 10px;
+    background-color:rgba(166, 255, 0, 0.952) ;
+    border-color: rgba(166, 255, 0, 0.952);
+    color:black;
+    text-align: center;
+    margin-top: 100px;
     }
     .flex-top-header{
     flex-wrap: wrap;
@@ -207,29 +179,22 @@
     float: left;
     margin-top: 50px;
     margin-left: 20px;
-    
     }
     
-
-    
     /*Segunda Página*/
-    
     #secondPage{
-        display: none;
-        background-image: url(picture/fondo1.png);
-        background-position: center center;
-        background-attachment:fixed;
-        background-size: cover;
-        text-align: center;
-        }
-    
+    display: none;
+    background-image: url(picture/fondo1.png);
+    background-position: center center;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    }
     .filter{
     height: 300px;
     }
-    
     .card {
     background-color:rgba(160, 247, 0, 0.61);
-    
     /*background-image:url(picture/cardfondop.png); */
     display: inline-block;
     padding: 10px;
@@ -240,17 +205,9 @@
     border-style: double;
     border-radius: 10px;
     text-align: center;
-<<<<<<< HEAD
     color: rgb(10, 10, 10);
     font-size: 17px;
-    
-=======
-    color: white;
-    font-size: 17px;
-    -webkit-text-stroke: black 0.6px;
->>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
     }
-    
     .cardContainer {
     display: flex;
     flex-direction: row;
@@ -259,15 +216,11 @@
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 20px;
-    
     }
-    
     /*tercerapagina*/
-    
     .filter1 {
     background-image: url(picture/fondo1.png);
     background-position: center center;
-   
     text-align: center;
     background-attachment: fixed;
     }
@@ -275,760 +228,612 @@
     display: none;
     }
     .Chart{
-        display: block; 
-        background-color: rgba(115, 255, 0, 0.747);
-        border-radius: 20px;
-<<<<<<< HEAD
-        align-items: center;
-        
-    }
-
-    
-    .chartCssLeft{
-        
-     
-        font-size: 40px;
-        color: white;
-       padding: 0px;
-        
-       
-        
-=======
-    }
-    .chartCssLeft{
-       
-        flex-wrap: wrap;
-        font-size: 40px;
-        color: white;
-        text-align: center;
-        border-color: red;
-        width: 900px ;
-        height: 500px ;
-        padding: 30px ;
-        margin-left: auto;
-        margin-right: auto;
->>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
+    display: block; 
+    background-color: rgba(115, 255, 0, 0.747);
+    border-radius: 20px;
+    align-items: center;
     }
     
+    .chartCssLeft{
+    font-size: 40px;
+    color: white;
+    padding: 0px;
+    }
     .chartCss{
-        display: inline-block;
-        font-size: 40px;
-        color: white;
-<<<<<<< HEAD
-        
-        
-=======
-        width: 700px !important;
-        height: 500px !important;
-        padding: 20px !important;
->>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
-        margin-top: 100px;
+    display: inline-block;
+    font-size: 40px;
+    color: white;
+    margin-top: 100px;
     }
     .ventana{
-        background: #999;
-        width: 30%;
-        color: black;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 18px;
-        text-align: center;
-        padding: 33px;
-        min-height: 250px;
-        border-radius: 22px;
-        position: absolute;
-        left: 35%;
-        top: 25%;
-        display: none;
+    background: #999;
+    width: 30%;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    text-align: center;
+    padding: 33px;
+    min-height: 250px;
+    border-radius: 22px;
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    display: none;
     }
-    
-    
     .titleCss{
-        margin-top: 0px;
-        padding-top: 0px
+    margin-top: 0px;
+    padding-top: 0px
     }
-<<<<<<< HEAD
-   .buttonFunFacts{
-=======
-.planet{
-    padding-top: 80px;
-}   
     .buttonFunFacts{
->>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
-        margin-top: 50px;
-        padding-top: 50px;
+    margin-top: 50px;
+    padding-top: 50px;
     }
     .tituloOne {
-        margin: 20px 100px;
-        padding-bottom: 10px;
+    margin: 20px 100px;
+    padding-bottom: 10px;
     font-family: 'reggae one';
-    
-    
     padding-top: 30px;
     font-size: 50px;
     color: #CCD852;
     text-shadow: rgb(0,176,199) 0 -2px;
     -webkit-text-stroke: 1px #24235fff;
-    
     }
-#cuartapagina{
+    #cuartapagina{
     display: none;
-}
-
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 425px) and (min-width:320px){
-  
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media only screen and (max-width: 425px) and (min-width:320px){
     .nav{
-        width: 100%;
+    width: 100%;
     }
     .nav > li {
     float: left;
     margin-top: 10px;
     margin-right: 20px;
     }
-   
-.nav li a {
-    
+    .nav li a {
     margin-left: -35px;
     font-size: 17px;
     text-decoration:none;
     border-radius: 30px;
     padding: 5px 10px;
-    
     }
-.home{
+    .home{
     margin-right: 10px;
-}
-.characters{
+    }
+    .characters{
     margin-right: 0px;
-}
+    }
     .nav li ul {
-    
-        left: 60px;
-        min-width:50px;
-        
-        }
-        .nav li ul li {
-            margin-left: 35px;
-        }
-        .nav li ul li ul {
-            left: 135px;
-            
-        }
-        .logo {
-            width: 80%;
-            padding-top: 140px;
-    
-        }
-.containerModal{
-        width: 50%;
-        height: 18%;
-        padding: 20px 20px;
-        border-radius: 15px;
-        top: 60px;
-}
-.containerModal label {
-   
+    left: 60px;
+    min-width:50px;
+    }
+    .nav li ul li {
+    margin-left: 35px;
+    }
+    .nav li ul li ul {
+    left: 135px;
+    }
+    .logo {
+    width: 80%;
+    padding-top: 140px;
+    }
+    .containerModal{
+    width: 50%;
+    height: 18%;
+    padding: 20px 20px;
+    border-radius: 15px;
+    top: 60px;
+    }
+    .containerModal label {
     top: -10px;
     right: -60px;
     color: black;
     font-size: 20px;
     cursor:pointer;
-    
     }
     .contenido h2{
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size: 14px;    
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px; 
     }
-   
     .funFactsButton {
-        
-        top: -40px;
+    top: -40px;
     }
     .backgroundGif {
-        
-        margin-top: -200px;
+    margin-top: -200px;
     }
     .fixingGif {
-        width: 60%;
-        height: 250px; 
-        padding-top: 10px;
-        padding-bottom: 50px;
-       
+    width: 60%;
+    height: 250px; 
+    padding-top: 10px;
+    padding-bottom: 50px;
     }
-   
-        
-        .buttonCss {
-            font-size: 15px;
-            
+    .buttonCss {
+    font-size: 15px;
     }
-
+    
     /*SegundaPAgina*/
     .tituloOne {
-        margin: 20px 30px;
-        padding-bottom: 10px;
-        font-size: 30px;
+    margin: 20px 30px;
+    padding-bottom: 10px;
+    font-size: 30px;
     }
     .imgSize{
-        width: 100px;
-        height: 100px;
+    width: 100px;
+    height: 100px;
     }
-
+    
     .cardContainer{
-        margin-top: 10px;
+    margin-top: 10px;
     }
     .card {
-        background-color: #3af7f7;
-        width: 200px;
-        height: 250px;
-        border: 3px rgb(238, 241, 13);
-        border-style: double;
-        border-radius: 10px;
-        text-align: center;
-        font-family: Reggae One;
-        font-style: normal;
-        color: rgb(250, 248, 248);
-        font-size: 14px;
+    background-color: #3af7f7;
+    width: 200px;
+    height: 250px;
+    border: 3px rgb(238, 241, 13);
+    border-style: double;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Reggae One;
+    font-style: normal;
+    color: rgb(250, 248, 248);
+    font-size: 14px;
     }
     
-
-}
-
-/*SOlo tercera pagina*/
-@media screen and (max-width:320px){
-
+    }
+    
+    /*SOlo tercera pagina*/
+    @media screen and (max-width:320px){
+    
     /*TerceraPagina*/
-
+    
     background-header {
-        background-color: rgba(0, 192, 199, 0.788);
-        
-        width: 10%;
-    }
-
-    .chartCssLeft {
-        font-size: 25px;
-        width: 100%;
-        height:100%;
-        padding-left: 5px;
-        
-        padding-top: 100px;
+    background-color: rgba(0, 192, 199, 0.788);
+    width: 10%;
     }
     
-    .chartCss {    
+    .chartCssLeft {
+    font-size: 25px;
+    width: 100%;
+    height:100%;
+    padding-left: 5px;
+    padding-top: 100px;
+    }
+    .chartCss { 
     padding: 5px;
     padding-right: 0px !important;
     margin-top: 70px;
     margin-right: 0px !important;
     }
     #numberMundos{
-     width: 310px !important;
+    width: 310px !important;
     height: 270px !important;
-        /*transform:  rotate(-90deg);*/
+    /*transform: rotate(-90deg);*/
     }
-    
     .titleName{
-        font-size: 30px;
-        margin: 0px !important;
-        width: 300px;
-        padding-bottom: 30px;
+    font-size: 30px;
+    margin: 0px !important;
+    width: 300px;
+    padding-bottom: 30px;
     }
     #topFive{
-        margin: 0px !important;
-            width: 310px !important;
-            height: 250px !important;
-            /*transform:  rotate(-90deg);*/
-        }
-}
-
-/*Solo tercera pagina*/
-@media only screen and (min-width: 375px) {
-/*TerceraPagina*/
-.chartCssLeft {
+    margin: 0px !important;
+    width: 310px !important;
+    height: 250px !important;
+    /*transform: rotate(-90deg);*/
+    }
+    }
+    
+    /*Solo tercera pagina*/
+    @media only screen and (min-width: 375px) {
+    /*TerceraPagina*/
+    .chartCssLeft {
     font-size: 25px;
     width: 100%;
     height:100%;
     padding-left: 5px;
-    
     padding-top: 100px;
-}
-
-.chartCss {    
-padding: 5px;
-padding-right: 0px !important;
-margin-top: 70px;
-
-}
-#numberMundos{
- width: 365px !important;
-height: 270px !important;
-    /*transform:  rotate(-90deg);*/
-}
-
-.titleName{
-    font-size: 30px;
-    margin: 0px !important;
-    width: 300px;
-    padding-left: 30px;
-    padding-bottom: 30px;
-}
-#topFive{
-    margin: 0px !important;
-        width: 365px !important;
-        height: 250px !important;
-        /*transform:  rotate(-90deg);*/
-    }
-}
-
-@media only screen and (min-width: 425px) {
-    /*TerceraPagina*/
-
-    .chartCssLeft {
-       
-        font-size: 25px;
-        width: 100%;
-        height:100%;
-        padding-left: 5px;
-        
-        padding-top: 100px;
     }
     
-    .chartCss {    
+    .chartCss { 
     padding: 5px;
     padding-right: 0px !important;
     margin-top: 70px;
     
     }
     #numberMundos{
-     width: 415px !important;
+    width: 365px !important;
     height: 270px !important;
-    
-        /*transform:  rotate(-90deg);*/
+    /*transform: rotate(-90deg);*/
     }
     
     .titleName{
-        font-size: 30px;
-        margin: 0px !important;
-        width: 300px;
-        padding-left: 60px;
-        padding-bottom: 30px;
+    font-size: 30px;
+    margin: 0px !important;
+    width: 300px;
+    padding-left: 30px;
+    padding-bottom: 30px;
     }
     #topFive{
-        margin: 0px !important;
-            width: 415px !important;
-            height: 250px !important;
-            /*transform:  rotate(-90deg);*/
-        }
+    margin: 0px !important;
+    width: 365px !important;
+    height: 250px !important;
+    /*transform: rotate(-90deg);*/
     }
-
-@media only screen and (min-width: 768px) {
-        /*TerceraPagina*/
+    }
     
-        .chartCssLeft {
-            font-size: 40px;
-            width: 100%;
-            height:100%;
-            padding-left: 5px;
-            
-            padding-top: 100px;
-        }
-        
-       
-        #numberMundos{
-         width: 750px !important;
-        height: 400px !important;
-            /*transform:  rotate(-90deg);*/
-        }
-        
-        .titleName{
-            font-size: 40px;
-           margin-left:200px;
-            width: 300px;
-            padding-left: 200px;
-            padding-right: 100px;
-            padding-bottom: 30px;
-        }
-        .chartCss {    
-            padding: 5px;
-            padding-right: 0px !important;
-            margin-top: 100px;
-            margin-bottom: 40px;
-            
-            }
-        #topFive{
-           
-                width: 750px !important;
-                height: 400px !important;
-                padding-bottom: 20px;
-                /*transform:  rotate(-90deg);*/
-            }
-        }
+    @media only screen and (min-width: 425px) {
+    /*TerceraPagina*/
     
-@media only screen and (min-width: 1024px){
-            /*TerceraPagina*/
-        
-            .chartCssLeft {
-                font-size: 40px;
-                width: 100%;
-                height:100%;
-                padding-left: 30px;
-                
-                padding-top: 100px;
-            }
-            
-           
-            #numberMundos{
-             width: 950px !important;
-            height: 500px !important;
-                /*transform:  rotate(-90deg);*/
-            }
-            
-            .titleName{
-                font-size: 40px;
-               margin-left:200px;
-                width: 300px;
-                padding-left: 340px;
-                
-                padding-bottom: 30px;
-            }
-            .chartCss {    
-                padding: 5px;
-                padding-right: 0px !important;
-                margin-top: 100px;
-                margin-bottom: 40px;
-                
-                }
-            #topFive{
-               
-                    width: 950px !important;
-                    height: 500px !important;
-                    padding-bottom: 20px;
-                    /*transform:  rotate(-90deg);*/
-                }
-            }
-@media only screen and (min-width:2560px){
-                /*TerceraPagina*/
-            
-                .chartCssLeft {
-                    font-size: 40px;
-                    width: 100%;
-                    height:100%;
-                    padding-left: 30px;
-                    
-                    padding-top: 200px;
-                }
-                
-               
-                #numberMundos{
-                 width: 2400px !important;
-                height: 1200px !important;
-                    /*transform:  rotate(-90deg);*/
-                }
-                
-                .titleName{
-                    font-size: 40px;
-                   margin-left:200px;
-                    width: 300px;
-                    padding-left: 600px;
-                    
-                    padding-bottom: 30px;
-                }
-                .chartCss {    
-                    padding: 5px;
-                    padding-right: 0px !important;
-                    margin-top: 100px;
-                    margin-bottom: 40px;
-                    
-                    }
-                #topFive{
-                   
-                        width: 2400px !important;
-                        height: 1200px !important;
-                        padding-bottom: 20px;
-                        /*transform:  rotate(-90deg);*/
-                    }
-                }
-                @media only screen and (min-width:1440px){
-                    /*TerceraPagina*/
-                
-                    .chartCssLeft {
-                        font-size: 40px;
-                        width: 100%;
-                        height:100%;
-                        padding-left: 30px;
-                        
-                        padding-top: 200px;
-                    }
-                    
-                   
-                    #numberMundos{
-                     width: 1400px !important;
-                    height:800px !important;
-                        /*transform:  rotate(-90deg);*/
-                    }
-                    
-                    .titleName{
-                        font-size: 40px;
-                       margin-left:200px;
-                        width: 300px;
-                        padding-left: 500px;
-                        
-                        padding-bottom: 30px;
-                    }
-                    .chartCss {    
-                        padding: 5px;
-                        padding-right: 0px !important;
-                        margin-top: 100px;
-                        margin-bottom: 40px;
-                        
-                        }
-                    #topFive{
-                       
-                            width: 1400px !important;
-                            height: 800px !important;
-                            padding-bottom: 20px;
-                            /*transform:  rotate(-90deg);*/
-                        }
-                    }
-@media only screen and (max-width: 1024px) and (min-width:768px){
-  
+    .chartCssLeft {
+    font-size: 25px;
+    width: 100%;
+    height:100%;
+    padding-left: 5px;
+    padding-top: 100px;
+    }
+    .chartCss { 
+    padding: 5px;
+    padding-right: 0px !important;
+    margin-top: 70px;
+    }
+    #numberMundos{
+    width: 415px !important;
+    height: 270px !important;
+    /*transform: rotate(-90deg);*/
+    }
+    .titleName{
+    font-size: 30px;
+    margin: 0px !important;
+    width: 300px;
+    padding-left: 60px;
+    padding-bottom: 30px;
+    }
+    #topFive{
+    margin: 0px !important;
+    width: 415px !important;
+    height: 250px !important;
+    /*transform: rotate(-90deg);*/
+    }
+    }
+    
+    @media only screen and (min-width: 768px) {
+    /*TerceraPagina*/
+    .chartCssLeft {
+    font-size: 40px;
+    width: 100%;
+    height:100%;
+    padding-left: 5px;
+    padding-top: 100px;
+    }
+    #numberMundos{
+    width: 750px !important;
+    height: 400px !important;
+    /*transform: rotate(-90deg);*/
+    }
+    .titleName{
+    font-size: 40px;
+    margin-left:200px;
+    width: 300px;
+    padding-left: 200px;
+    padding-right: 100px;
+    padding-bottom: 30px;
+    }
+    .chartCss { 
+    padding: 5px;
+    padding-right: 0px !important;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    }
+    #topFive{
+    width: 750px !important;
+    height: 400px !important;
+    padding-bottom: 20px;
+    /*transform: rotate(-90deg);*/
+    }
+    }
+    @media only screen and (min-width: 1024px){
+    /*TerceraPagina*/
+    .chartCssLeft {
+    font-size: 40px;
+    width: 100%;
+    height:100%;
+    padding-left: 30px;
+    padding-top: 100px;
+    }
+    #numberMundos{
+    width: 950px !important;
+    height: 500px !important;
+    /*transform: rotate(-90deg);*/
+    }
+    .titleName{
+    font-size: 40px;
+    margin-left:200px;
+    width: 300px;
+    padding-left: 340px;
+    padding-bottom: 30px;
+    }
+    .chartCss { 
+    padding: 5px;
+    padding-right: 0px !important;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    }
+    #topFive{
+    width: 950px !important;
+    height: 500px !important;
+    padding-bottom: 20px;
+    /*transform: rotate(-90deg);*/
+    }
+    }
+    @media only screen and (min-width:2560px){
+    /*TerceraPagina*/
+    .chartCssLeft {
+    font-size: 40px;
+    width: 100%;
+    height:100%;
+    padding-left: 30px;
+    padding-top: 200px;
+    }
+    #numberMundos{
+    width: 2400px !important;
+    height: 1200px !important;
+    /*transform: rotate(-90deg);*/
+    }
+    .titleName{
+    font-size: 40px;
+    margin-left:200px;
+    width: 300px;
+    padding-left: 600px;
+    padding-bottom: 30px;
+    }
+    .chartCss { 
+    padding: 5px;
+    padding-right: 0px !important;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    }
+    #topFive{
+    width: 2400px !important;
+    height: 1200px !important;
+    padding-bottom: 20px;
+    /*transform: rotate(-90deg);*/
+    }
+    }
+    @media only screen and (min-width:1440px){
+    /*TerceraPagina*/
+    .chartCssLeft {
+    font-size: 40px;
+    width: 100%;
+    height:100%;
+    padding-left: 30px;
+    padding-top: 200px;
+    }
+    #numberMundos{
+    width: 1400px !important;
+    height:800px !important;
+    /*transform: rotate(-90deg);*/
+    }
+    .titleName{
+    font-size: 40px;
+    margin-left:200px;
+    width: 300px;
+    padding-left: 500px;
+    padding-bottom: 30px;
+    }
+    .chartCss { 
+    padding: 5px;
+    padding-right: 0px !important;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    }
+    #topFive{
+    width: 1400px !important;
+    height: 800px !important;
+    padding-bottom: 20px;
+    /*transform: rotate(-90deg);*/
+    }
+    }
+    @media only screen and (max-width: 1024px) and (min-width:768px){
     .background-header {
-       
-        height: 100px; 
-        
+    height: 100px; 
     }
-  
- .nav li a {
-     
-     margin-left: -20px;
-     margin-bottom: 20px;
-     font-size: 28px;
-     text-decoration:none;
-     border-radius: 30px;
-    
-     }
-     .nav li ul {
-         margin-left: 70px;
-     
-         min-width:90px;
-         
-         }
-         .nav li ul li {
-             margin-left: 50px;
-         }
-         .nav li ul li ul {
-             left: 250px;
-             
-         }
-         .logo {
-             width: 70%;
-             padding-top: 200px;
-     padding-bottom: 50px;
-         }
- .home{
-     margin-right: 10px;
- }
- .characters{
-     margin-right: 0px;
- }
-    
- .containerModal{
-         width: 70%;
-         height: 18%;
-         padding: 20px 20px;
-         border-radius: 15px;
-         top: 60px;
- }
- .containerModal label {
-    
-     top: -10px;
-     right: -200px;
-     color: black;
-     font-size: 30px;
-     cursor:pointer;
-     
-     }
-     .contenido h2{
-         font-family:Georgia, 'Times New Roman', Times, serif;
-         font-size: 28px;    
-     }
-    
-     .funFactsButton {
-         
-         top: 180px;
-     }
-     .fixingGif {
-         width: 70%;
-         height: 450px; 
-         padding-top: 80px;
-         padding-bottom: 70px;
-        
-     }
-  
-         .buttonCss {
-             font-size: 15px;
-             
-     }
- 
-     /*SegundaPAgina*/
-     #titulo{
-         position:relative
-     }
-     .search-form{
-         padding-top: 60px;
-     }
-     #textBuscar {
-        width: 50%;
-        height: 40px;
-        
+    .nav li a {
+    margin-left: -20px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-decoration:none;
+    border-radius: 30px;
     }
-     .tituloOne {
-         margin: 10px 10px;
-         font-size: 55px;
-     }
-     .imgSize{
-         width: 150px;
-         height: 150px;
-     }
-     .cardContainer{
-         margin-top: 60px;
-         padding-top: 60px;
-     }
-     .card {
-         background-color: #3af7f7;
-         width: 200px;
-         height: 280px;
-         border: 3px rgb(250, 84, 8);
-         border-style: double;
-         border-radius: 10px;
-         text-align: center;
-         font-family: Reggae One;
-         
-         color: rgb(7, 3, 20);
-         font-size: 14px;
-     }
- }
- @media only screen and (max-width: 2560px) and (min-width:1440px){
-  
+    .nav li ul {
+    margin-left: 70px;
+    min-width:90px;
+    }
+    .nav li ul li {
+    margin-left: 50px;
+    }
+    .nav li ul li ul {
+    left: 250px;
+    }
+    .logo {
+    width: 70%;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    }
+    .home{
+    margin-right: 10px;
+    }
+    .characters{
+    margin-right: 0px;
+    }
+    .containerModal{
+    width: 70%;
+    height: 18%;
+    padding: 20px 20px;
+    border-radius: 15px;
+    top: 60px;
+    }
+    .containerModal label {
+    top: -10px;
+    right: -200px;
+    color: black;
+    font-size: 30px;
+    cursor:pointer;
+    }
+    .contenido h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px; 
+    }
+    .funFactsButton {
+    top: 180px;
+    }
+    .fixingGif {
+    width: 70%;
+    height: 450px; 
+    padding-top: 80px;
+    padding-bottom: 70px;
+    }
+    .buttonCss {
+    font-size: 15px;
+    }
+    /*SegundaPAgina*/
+    #titulo{
+    position:relative
+    }
+    .search-form{
+    padding-top: 60px;
+    }
+    #textBuscar {
+    width: 50%;
+    height: 40px;
+    }
+    .tituloOne {
+    margin: 10px 10px;
+    font-size: 55px;
+    }
+    .imgSize{
+    width: 150px;
+    height: 150px;
+    }
+    .cardContainer{
+    margin-top: 60px;
+    padding-top: 60px;
+    }
+    .card {
+    background-color: #3af7f7;
+    width: 200px;
+    height: 280px;
+    border: 3px rgb(250, 84, 8);
+    border-style: double;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Reggae One;
+    color: rgb(7, 3, 20);
+    font-size: 14px;
+    }
+    }
+    @media only screen and (max-width: 2560px) and (min-width:1440px){
     .background-header {
-       
-        height: 180px; 
-        
+    height: 180px; 
     }
-  
- .nav li a {
-     
-     margin-left: 30px;
-     margin-top: 20px;
-     font-size: 60px;
-     text-decoration:none;
-     border-radius: 30px;
-    
-     }
-     .nav li ul {
-         margin-left: 70px;
-     
-         min-width:90px;
-         
-         }
-         .nav li ul li {
-             margin-left: 50px;
-         }
-         .nav li ul li ul {
-             left: 250px;
-             
-         }
-         .logo {
-             width: 80%;
-             padding-top: 200px;
-     padding-bottom: 50px;
-         }
- .home{
-     margin-right: 10px;
- }
- .characters{
-     margin-right: 0px;
- }
-    
- .containerModal{
-         width: 70%;
-         height: 18%;
-         padding: 20px 20px;
-         border-radius: 15px;
-         top: 60px;
- }
- .containerModal label {
-    
-     top: -10px;
-     right: -200px;
-     color: black;
-     font-size: 30px;
-     cursor:pointer;
-     
-     }
-     .contenido h2{
-         font-family:Georgia, 'Times New Roman', Times, serif;
-         font-size: 28px;    
-     }
-    
-     .funFactsButton {
-         
-         top: 180px;
-     }
-     .fixingGif {
-        width: 70%;
-        height: 1100px;
-        padding-top: 150px;
-        padding-bottom: 80px;
-     }
-  
-         .buttonCss {
-             font-size: 70px;
-             
-     }
- 
-     /*SegundaPAgina*/
-     #titulo{
-         position:relative
-     }
-     .search-form{
-         padding-top: 60px;
-     }
-     #textBuscar {
-        width: 50%;
-        height: 40px;
-        
+    .nav li a {
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 60px;
+    text-decoration:none;
+    border-radius: 30px;
     }
-     .tituloOne {
-         margin: 10px 10px;
-         font-size: 55px;
-     }
-     .imgSize{
-         width: 220px;
-         height: 220px;
-     }
-     .cardContainer{
-         margin-top: 60px;
-         padding-top: 60px;
-     }
-     .card {
-         background-color: #3af7f7;
-         width: 330px;
-         height: 390px;
-         border: 3px rgb(222, 10, 250);
-         border-style: double;
-         border-radius: 10px;
-         text-align: center;
-         font-family: Reggae One;
-         
-         color: rgb(7, 3, 20);
-         font-size: 20px;
-     }
- }
-=======
->>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
+    .nav li ul {
+    margin-left: 70px;
+    min-width:90px;
+    }
+    .nav li ul li {
+    margin-left: 50px;
+    }
+    .nav li ul li ul {
+    left: 250px;
+    }
+    .logo {
+    width: 80%;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    }
+    .home{
+    margin-right: 10px;
+    }
+    .characters{
+    margin-right: 0px;
+    }
+    .containerModal{
+    width: 70%;
+    height: 18%;
+    padding: 20px 20px;
+    border-radius: 15px;
+    top: 60px;
+    }
+    .containerModal label {
+    top: -10px;
+    right: -200px;
+    color: black;
+    font-size: 30px;
+    cursor:pointer;
+    }
+    .contenido h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px; 
+    }
+    .funFactsButton {
+    top: 180px;
+    }
+    .fixingGif {
+    width: 70%;
+    height: 1100px;
+    padding-top: 150px;
+    padding-bottom: 80px;
+    }
+    .buttonCss {
+    font-size: 70px;
+    }
+    /*SegundaPAgina*/
+    #titulo{
+    position:relative
+    }
+    .search-form{
+    padding-top: 60px;
+    }
+    #textBuscar {
+    width: 50%;
+    height: 40px;
+    }
+    .tituloOne {
+    margin: 10px 10px;
+    font-size: 55px;
+    }
+    .imgSize{
+    width: 220px;
+    height: 220px;
+    }
+    .cardContainer{
+    margin-top: 60px;
+    padding-top: 60px;
+    }
+    .card {
+    background-color: #3af7f7;
+    width: 330px;
+    height: 390px;
+    border: 3px rgb(222, 10, 250);
+    border-style: double;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Reggae One;
+    color: rgb(7, 3, 20);
+    font-size: 20px;
+    }
+    }

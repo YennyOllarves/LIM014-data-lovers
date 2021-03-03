@@ -32,12 +32,12 @@ document.getElementById("titulo").innerHTML = `<p class="tituloOne ">Personajes 
 }
 
 document.getElementById("orderAZ").addEventListener(
-  "click", function () {
+"click", function () {
 
-    let datos = data.results;
-    datos = orderAZ(datos);
-    document.getElementById("card1").innerHTML = uniqueTemplate(datos);
-    })
+let datos = data.results;
+datos = orderAZ(datos);
+document.getElementById("card1").innerHTML = uniqueTemplate(datos);
+})
 //orderZA
 
 document.querySelector(".orderZA").onclick = function() {
@@ -45,12 +45,12 @@ document.getElementById("titulo").innerHTML = `<p class="tituloOne ">Personajes 
 }
 
 document.getElementById("orderZA").addEventListener(
-  "click", function () {
+"click", function () {
 
-    let datos = data.results;
+let datos = data.results;
 datos = orderZA(datos);
 document.getElementById("card1").innerHTML = uniqueTemplate(datos);
-    })
+})
 
 //species
 
@@ -231,19 +231,10 @@ document.getElementById('homepage').style.display = 'none';
 }
 )
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
 document.getElementById("textBuscar").addEventListener(
-  "keyup", function () {
-  let input = document.getElementById("textBuscar").value;
-  let datos = data.results;
-  let datos1 = Buscadorr(datos,input);
-  document.getElementById("card").innerHTML = uniqueTemplate(datos1);
-<<<<<<< HEAD
-  }) 
-=======
-  }) 
->>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
+"keyup", function () {
+let input = document.getElementById("textBuscar").value;
+let datos = data.results;
+let datos1 = Buscadorr(datos,input);
+document.getElementById("card").innerHTML = uniqueTemplate(datos1);
+}) 
