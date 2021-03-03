@@ -1,5 +1,5 @@
-import { orderZA, orderAZ, genderFemale, genderMale, genderUnknown, speciesHuman, speciesAlien,statusAlive,statusDead, tierraOrigin} from '../src/data.js';
-import{datos, datosOrdenados, Female, Male, Undknown, Human, Alien, Alive, Dead, Tierra} from '../test/datos.js'
+import { orderZA, orderAZ, genderFemale, genderMale, genderUnknown, speciesHuman, speciesAlien,statusAlive,statusDead, tierraOrigin, Buscadorr} from '../src/data.js';
+import{datos, datosOrdenados, Female, Male, Undknown, Human, Alien, Alive, Dead, Tierra, input, buscado} from '../test/datos.js'
 
 describe('orderZA', () => {
   it('is a function', () => {
@@ -97,5 +97,15 @@ describe('tierraOrigin', () => {
 
   it('returns `anotherExample`', () => {
     expect(tierraOrigin(datos)).toEqual(Tierra);
+  });
+});
+
+describe('Buscador', () => {
+  it('is a function', () => {
+    expect(typeof Buscadorr).toBe('function');
+  });
+
+  it('returns `anotherExample`', () => {
+    expect(Buscadorr(datos,input)).toEqual(buscado);
   });
 });
