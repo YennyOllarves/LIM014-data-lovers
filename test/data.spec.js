@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-import { orderZA, orderAZ, genderFemale, genderMale, genderUnknown, speciesHuman, speciesAlien,statusAlive,statusDead, tierraOrigin} from '../src/data.js';
-import{datos, datosOrdenados, Female, Male, Undknown, Human, Alien, Alive, Dead, Tierra} from '../test/datos.js'
-=======
-import { orderZA, orderAZ, genderFemale, genderMale, genderUnknown, speciesHuman, speciesAlien,statusAlive,statusDead, tierraOrigin, Buscadorr} from '../src/data.js';
-import{datos, datosOrdenados, Female, Male, Undknown, Human, Alien, Alive, Dead, Tierra, input, buscado} from '../test/datos.js'
->>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
+import { orderZA, orderAZ, genderFemale, genderMale, genderUnknown, speciesHuman, speciesAlien,statusAlive,statusDead, tierraOrigin, Buscadorr, numberWorlds, mainCharacters} from '../src/data.js';
+import{datos, datosOrdenados, Female, Male, Undknown, Human, Alien, Alive, Dead, Tierra, input, buscado, allWorlds, top} from '../test/datos.js'
 
 describe('orderZA', () => {
   it('is a function', () => {
@@ -62,28 +57,6 @@ describe('speciesHuman', () => {
 
   it('returns `anotherExample`', () => {
     expect(speciesHuman(datos)).toEqual(Human);
-<<<<<<< HEAD
-  });
-});
-
-describe('speciesAlien', () => {
-  it('is a function', () => {
-    expect(typeof speciesAlien).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(speciesAlien(datos)).toEqual(Alien);
-  });
-});
-
-describe('statusAlive', () => {
-  it('is a function', () => {
-    expect(typeof statusAlive).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(statusAlive(datos)).toEqual(Alive);
-=======
   });
 });
 
@@ -134,7 +107,6 @@ describe('Buscador', () => {
 
   it('returns `anotherExample`', () => {
     expect(Buscadorr(datos,input)).toEqual(buscado);
->>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
   });
 });
 
@@ -155,5 +127,25 @@ describe('tierraOrigin', () => {
 
   it('returns `anotherExample`', () => {
     expect(tierraOrigin(datos)).toEqual(Tierra);
+  });
+});
+
+describe('Mundos', () => {
+  it('is a function', () => {
+    expect(typeof numberWorlds).toBe('function');
+  });
+
+  it('returns `anotherExample`', () => {
+    expect(numberWorlds(datos)).toEqual(allWorlds);
+  });
+});
+
+describe('Top', () => {
+  it('is a function', () => {
+    expect(typeof mainCharacters).toBe('function');
+  });
+
+  it('returns `anotherExample`', () => {
+    expect(mainCharacters(datos)).toEqual(top);
   });
 });

@@ -438,8 +438,6 @@ export const Tierra =[{
     "url": "https://rickandmortyapi.com/api/character/17",
     "created": "2017-11-04T22:21:24.481Z"
 }]
-<<<<<<< HEAD
-=======
 
 export const input = "A";
 
@@ -484,4 +482,6 @@ export const buscado = [{"id": 6,
     "url": "https://rickandmortyapi.com/api/character/17",
     "created": "2017-11-04T22:21:24.481Z"
 }]
->>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
+
+export const allWorlds = ["Abadango", "Earth (C-137)", "unknown","unknown"];
+export const top = [];
