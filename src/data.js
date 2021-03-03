@@ -115,4 +115,8 @@ export const mainCharacters = (datos) =>{
   }
 })
 return topFive;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353

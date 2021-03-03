@@ -37,7 +37,11 @@ new Chart(ctx,{
       xAxes:[{
         ticks:{
           fontColor: ["rgba(255,255,255)"],
+<<<<<<< HEAD
           fontSize: ["14"]
+=======
+          fontSize: ["13"]
+>>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
         }
       }]
     }
@@ -83,7 +87,11 @@ new Chart(mundos,{
       xAxes:[{
         ticks:{
           fontColor: ["rgba(255,255,255)"],
+<<<<<<< HEAD
           fontSize: ["14"]
+=======
+          fontSize: ["13"]
+>>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
         }
       }]
     }

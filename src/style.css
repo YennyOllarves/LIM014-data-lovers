@@ -35,7 +35,11 @@
         .nav li ul {
         display:none;
         position: absolute;
+<<<<<<< HEAD
         left: 145px;
+=======
+        left: 165px;
+>>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
         min-width:100px;
         background-color: rgba(0, 192, 199,0.788);
         border-radius: 20px;
@@ -51,7 +55,11 @@
         }
         
         .nav li ul li ul {
+<<<<<<< HEAD
         left: 260px;
+=======
+        left: 243px;
+>>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
         top: 0px;
         }
 
@@ -168,7 +176,15 @@
       margin-left: auto;
       margin-right: auto;
     }
+<<<<<<< HEAD
    
+=======
+    /*.search-form{
+    float: right;
+    margin-top: 50px;
+    margin-right: 20px;
+    }*/
+>>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
     #titulo{
         position:absolute;
         right: 0%;
@@ -224,9 +240,15 @@
     border-style: double;
     border-radius: 10px;
     text-align: center;
+<<<<<<< HEAD
     color: rgb(10, 10, 10);
     font-size: 17px;
     
+=======
+    color: white;
+    font-size: 17px;
+    -webkit-text-stroke: black 0.6px;
+>>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
     }
     
     .cardContainer {
@@ -256,6 +278,7 @@
         display: block; 
         background-color: rgba(115, 255, 0, 0.747);
         border-radius: 20px;
+<<<<<<< HEAD
         align-items: center;
         
     }
@@ -270,14 +293,35 @@
         
        
         
+=======
+    }
+    .chartCssLeft{
+       
+        flex-wrap: wrap;
+        font-size: 40px;
+        color: white;
+        text-align: center;
+        border-color: red;
+        width: 900px ;
+        height: 500px ;
+        padding: 30px ;
+        margin-left: auto;
+        margin-right: auto;
+>>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
     }
     
     .chartCss{
         display: inline-block;
         font-size: 40px;
         color: white;
+<<<<<<< HEAD
         
         
+=======
+        width: 700px !important;
+        height: 500px !important;
+        padding: 20px !important;
+>>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
         margin-top: 100px;
     }
     .ventana{
@@ -301,7 +345,14 @@
         margin-top: 0px;
         padding-top: 0px
     }
+<<<<<<< HEAD
    .buttonFunFacts{
+=======
+.planet{
+    padding-top: 80px;
+}   
+    .buttonFunFacts{
+>>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
         margin-top: 50px;
         padding-top: 50px;
     }
@@ -322,6 +373,7 @@
     display: none;
 }
 
+<<<<<<< HEAD
 
 
 
@@ -978,3 +1030,5 @@ height: 270px !important;
          font-size: 20px;
      }
  }
+=======
+>>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353

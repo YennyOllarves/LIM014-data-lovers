@@ -231,10 +231,19 @@ document.getElementById('homepage').style.display = 'none';
 }
 )
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
 document.getElementById("textBuscar").addEventListener(
   "keyup", function () {
   let input = document.getElementById("textBuscar").value;
   let datos = data.results;
   let datos1 = Buscadorr(datos,input);
   document.getElementById("card").innerHTML = uniqueTemplate(datos1);
+<<<<<<< HEAD
   }) 
+=======
+  }) 
+>>>>>>> e285d2546b1edf9fc482652cabd0ccefe2ea5353
