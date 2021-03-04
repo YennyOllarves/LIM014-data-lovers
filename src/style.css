@@ -6,7 +6,7 @@
     }
     .background-header{
     background-color: rgba(0, 192, 199, 0.788) ;
-    height: 80px;
+    height: 70px;
     width: 100%;
     position: fixed;
     z-index: 100;
@@ -31,7 +31,7 @@
     .nav li ul {
     display:none;
     position: absolute;
-    left: 145px;
+    left: 165px;
     min-width:100px;
     background-color: rgba(0, 192, 199,0.788);
     border-radius: 20px;
@@ -44,7 +44,7 @@
     position: relative;
     }
     .nav li ul li ul {
-    left: 260px;
+    left: 265px;
     top: 0px;
     }
     
@@ -163,11 +163,11 @@
     margin-top: 0px;
     } 
     #textBuscar{
-    width: 40%;
+    width: 20%;
     height: 30px;
     border-radius: 10px;
     background-color:rgba(166, 255, 0, 0.952) ;
-    border-color: rgba(166, 255, 0, 0.952);
+    border-color: rgba(135, 168, 73, 0.952);
     color:black;
     text-align: center;
     margin-top: 100px;
@@ -194,7 +194,7 @@
     height: 300px;
     }
     .card {
-    background-color:rgba(160, 247, 0, 0.61);
+    background-color:rgb(79, 211, 252);
     /*background-image:url(picture/cardfondop.png); */
     display: inline-block;
     padding: 10px;
@@ -269,14 +269,18 @@
     padding-top: 50px;
     }
     .tituloOne {
-    margin: 20px 100px;
+    margin: 50px 100px;
     padding-bottom: 10px;
-    font-family: 'reggae one';
-    padding-top: 30px;
-    font-size: 50px;
+    font-family: 'Racing Sans One', cursive;
+    padding-top: 10px;
+    padding-left:10px;
+    padding-right: 10px;
+    font-size: 30px;
     color: #CCD852;
     text-shadow: rgb(0,176,199) 0 -2px;
     -webkit-text-stroke: 1px #24235fff;
+    background-color: blanchedalmond;
+    border-radius: 20px;
     }
     #cuartapagina{
     display: none;
@@ -312,14 +316,14 @@
     margin-right: 0px;
     }
     .nav li ul {
-    left: 60px;
+    left:88px;
     min-width:50px;
     }
     .nav li ul li {
     margin-left: 35px;
     }
     .nav li ul li ul {
-    left: 135px;
+    left: 150px;
     }
     .logo {
     width: 80%;
@@ -711,7 +715,7 @@
     padding-top: 60px;
     }
     #textBuscar {
-    width: 50%;
+    width: 20%;
     height: 40px;
     }
     .tituloOne {
