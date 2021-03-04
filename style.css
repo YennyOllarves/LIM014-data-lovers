@@ -1,0 +1,843 @@
+* body {
+    margin: 0rem;
+    font-family: 'Racing Sans One', cursive;
+    background-color: #161311;
+    
+    }
+    .background-header{
+    background-color: rgba(0, 192, 199, 0.788) ;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    }
+    .nav li a {
+    background-color: rgba(0, 192, 199, 0);
+    color: white;
+    -webkit-text-stroke: black 0.5px;
+    font-size: 24px;
+    text-decoration:none;
+    border-radius: 30px;
+    padding: 10px 15px;
+    display:block;
+    }
+    .nav li a:hover {
+    background-color: rgba(166, 255, 0, 0.952);
+    color: black;
+    }
+    .nav > li {
+    float: left;
+    }
+    .nav li ul {
+    display:none;
+    position: absolute;
+    left: 165px;
+    min-width:100px;
+    background-color: rgba(0, 192, 199,0.788);
+    border-radius: 20px;
+    padding: 0px 0px;
+    }
+    .nav li:hover >ul {
+    display:block;
+    }
+    .nav li ul li{
+    position: relative;
+    }
+    .nav li ul li ul {
+    left: 265px;
+    top: 0px;
+    }
+    
+    #homepage {
+    background-image: url(picture/fondo1.png);
+    background-position: center center;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    }
+    .alignLogo {
+    display: flex;
+    }
+    .logo{
+    margin:center;
+    width:55%;
+    padding-top: 200px;
+    padding-bottom: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    .modal {
+    text-align: center;
+    position:relative; 
+    transition: all 500ms ease;
+    opacity: 5;
+    visibility: hidden;
+    z-index: 1;
+    top: -160px;
+    }
+    #btn-modal:checked ~ .modal{
+    opacity: 1;
+    visibility: visible;
+    }
+    .containerModal{
+    position: relative;
+    padding-top: 100px;
+    align-items: center;
+    width: 500px;
+    height: 180px;
+    margin: auto;
+    background: white;opacity: 0.8; 
+    box-shadow: 1px 7px 25px rgba(0,0,0,1);
+    transition: all 500ms ease;
+    padding: 50px 50px;
+    border-radius: 15px;
+    }
+    .containerModal label {
+    position:relative;
+    top: -10px;
+    right: -220px;
+    color: black;
+    font-size: 24px;
+    cursor:pointer;
+    }
+    #btn-modal {
+    display: none;
+    }
+    .contenido h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px; 
+    }
+    .buttonCss{
+    font-family: 'Racing Sans One', cursive;
+    font-size: 35px;
+    color: white;
+    -webkit-text-stroke: black 0.6px;
+    background: rgba(0, 192, 199, 0.918);
+    border:rgba(11, 161, 207, 0);
+    border-style: outset;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    }
+    li, ol {
+    list-style: none;
+    }
+    .buttonCss:hover{
+    background-color: rgba(166, 255, 0, 0.952);
+    color: black;
+    }
+    #summaryButton{
+    margin: auto;
+    }
+    .backgroundGif{
+    background-color:#16131196;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    margin-top: -80px;
+    }
+    .alignGif{
+    text-align: center;
+    }
+    .funFactsButton{
+    text-align: center;
+    position:relative ;
+    z-index: 1;
+    top: 180px;
+    }
+    .fixingGif{
+    margin:center;
+    width: 40%;
+    height: 400px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    #titulo{
+    position:absolute;
+    right: 0%;
+    margin-top: 0px;
+    } 
+    #textBuscar{
+    width: 20%;
+    height: 30px;
+    border-radius: 10px;
+    background-color:rgba(166, 255, 0, 0.952) ;
+    border-color: rgba(135, 168, 73, 0.952);
+    color:black;
+    text-align: center;
+    margin-top: 100px;
+    }
+    .flex-top-header{
+    flex-wrap: wrap;
+    }
+    .menu{
+    float: left;
+    margin-top: 50px;
+    margin-left: 20px;
+    }
+    
+    /*Segunda Página*/
+    #secondPage{
+    display: none;
+    background-image: url(picture/fondo1.png);
+    background-position: center center;
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    }
+    .filter{
+    height: 300px;
+    }
+    .card {
+    background-color:rgb(79, 211, 252);
+    /*background-image:url(picture/cardfondop.png); */
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 300px;
+    border: 3px rgb(10, 190, 245);
+    border-style: double;
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(10, 10, 10);
+    font-size: 17px;
+    }
+    .cardContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    }
+    /*tercerapagina*/
+    .filter1 {
+    background-image: url(picture/fondo1.png);
+    background-position: center center;
+    text-align: center;
+    background-attachment: fixed;
+    }
+    #tercerapagina {
+    display: none;
+    }
+    .Chart{
+    display: block; 
+    background-color: rgba(115, 255, 0, 0.747);
+    border-radius: 20px;
+    align-items: center;
+    }
+    
+    .chartCssLeft{
+    font-size: 40px;
+    color: white;
+    padding: 0px;
+    }
+    .chartCss{
+    display: inline-block;
+    font-size: 40px;
+    color: white;
+    margin-top: 100px;
+    }
+    .ventana{
+    background: #999;
+    width: 30%;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    text-align: center;
+    padding: 33px;
+    min-height: 250px;
+    border-radius: 22px;
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    display: none;
+    }
+    .titleCss{
+    margin-top: 0px;
+    padding-top: 0px
+    }
+    .buttonFunFacts{
+    margin-top: 50px;
+    padding-top: 50px;
+    }
+    .tituloOne {
+    margin: 50px 100px;
+    padding-bottom: 10px;
+    font-family: 'Racing Sans One', cursive;
+    padding-top: 10px;
+    padding-left:10px;
+    padding-right: 10px;
+    font-size: 30px;
+    color: #CCD852;
+    text-shadow: rgb(0,176,199) 0 -2px;
+    -webkit-text-stroke: 1px #24235fff;
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    }
+    #cuartapagina{
+    display: none;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    @media only screen and (max-width: 425px) and (min-width:320px){
+    .nav{
+    width: 100%;
+    }
+    .nav > li {
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+    }
+    .nav li a {
+    margin-left: -35px;
+    font-size: 17px;
+    text-decoration:none;
+    border-radius: 30px;
+    padding: 5px 10px;
+    }
+    .home{
+    margin-right: 10px;
+    }
+    .characters{
+    margin-right: 0px;
+    }
+    .nav li ul {
+    left:88px;
+    min-width:50px;
+    }
+    .nav li ul li {
+    margin-left: 35px;
+    }
+    .nav li ul li ul {
+    left: 150px;
+    }
+    .logo {
+    width: 80%;
+    padding-top: 140px;
+    }
+    .containerModal{
+    width: 50%;
+    height: 18%;
+    padding: 20px 20px;
+    border-radius: 15px;
+    top: 60px;
+    }
+    .containerModal label {
+    top: -10px;
+    right: -60px;
+    color: black;
+    font-size: 20px;
+    cursor:pointer;
+    }
+    .contenido h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px; 
+    }
+    .funFactsButton {
+    top: -40px;
+    }
+    .backgroundGif {
+    margin-top: -200px;
+    }
+    .fixingGif {
+    width: 60%;
+    height: 250px; 
+    padding-top: 10px;
+    padding-bottom: 50px;
+    }
+    .buttonCss {
+    font-size: 15px;
+    }
+    
+    /*SegundaPAgina*/
+    .tituloOne {
+    margin: 20px 30px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    }
+    .imgSize{
+    width: 100px;
+    height: 100px;
+    }
+    
+    .cardContainer{
+    margin-top: 10px;
+    }
+    .card {
+    background-color: #3af7f7;
+    width: 200px;
+    height: 250px;
+    border: 3px rgb(238, 241, 13);
+    border-style: double;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Reggae One;
+    font-style: normal;
+    color: rgb(250, 248, 248);
+    font-size: 14px;
+    }
+    
+    }
+    
+    /*SOlo tercera pagina*/
+    @media screen and (max-width:320px){
+    
+    /*TerceraPagina*/
+    
+    background-header {
+    background-color: rgba(0, 192, 199, 0.788);
+    width: 10%;
+    }
+    
+    .chartCssLeft {
+    font-size: 25px;
+    width: 100%;
+    height:100%;
+    padding-left: 5px;
+    padding-top: 100px;
+    }
+    .chartCss { 
+    padding: 5px;
+    padding-right: 0px !important;
+    margin-top: 70px;
+    margin-right: 0px !important;
+    }
+    #numberMundos{
+    width: 310px !important;
+    height: 270px !important;
+    /*transform: rotate(-90deg);*/
+    }
+    .titleName{
+    font-size: 30px;
+    margin: 0px !important;
+    width: 300px;
+    padding-bottom: 30px;
+    }
+    #topFive{
+    margin: 0px !important;
+    width: 310px !important;
+    height: 250px !important;
+    /*transform: rotate(-90deg);*/
+    }
+    }
+    
+    /*Solo tercera pagina*/
+    @media only screen and (min-width: 375px) {
+    /*TerceraPagina*/
+    .chartCssLeft {
+    font-size: 25px;
+    width: 100%;
+    height:100%;
+    padding-left: 5px;
+    padding-top: 100px;
+    }
+    
+    .chartCss { 
+    padding: 5px;
+    padding-right: 0px !important;
+    margin-top: 70px;
+    
+    }
+    #numberMundos{
+    width: 365px !important;
+    height: 270px !important;
+    /*transform: rotate(-90deg);*/
+    }
+    
+    .titleName{
+    font-size: 30px;
+    margin: 0px !important;
+    width: 300px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    }
+    #topFive{
+    margin: 0px !important;
+    width: 365px !important;
+    height: 250px !important;
+    /*transform: rotate(-90deg);*/
+    }
+    }
+    
+    @media only screen and (min-width: 425px) {
+    /*TerceraPagina*/
+    
+    .chartCssLeft {
+    font-size: 25px;
+    width: 100%;
+    height:100%;
+    padding-left: 5px;
+    padding-top: 100px;
+    }
+    .chartCss { 
+    padding: 5px;
+    padding-right: 0px !important;
+    margin-top: 70px;
+    }
+    #numberMundos{
+    width: 415px !important;
+    height: 270px !important;
+    /*transform: rotate(-90deg);*/
+    }
+    .titleName{
+    font-size: 30px;
+    margin: 0px !important;
+    width: 300px;
+    padding-left: 60px;
+    padding-bottom: 30px;
+    }
+    #topFive{
+    margin: 0px !important;
+    width: 415px !important;
+    height: 250px !important;
+    /*transform: rotate(-90deg);*/
+    }
+    }
+    
+    @media only screen and (min-width: 768px) {
+    /*TerceraPagina*/
+    .chartCssLeft {
+    font-size: 40px;
+    width: 100%;
+    height:100%;
+    padding-left: 5px;
+    padding-top: 100px;
+    }
+    #numberMundos{
+    width: 750px !important;
+    height: 400px !important;
+    /*transform: rotate(-90deg);*/
+    }
+    .titleName{
+    font-size: 40px;
+    margin-left:200px;
+    width: 300px;
+    padding-left: 200px;
+    padding-right: 100px;
+    padding-bottom: 30px;
+    }
+    .chartCss { 
+    padding: 5px;
+    padding-right: 0px !important;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    }
+    #topFive{
+    width: 750px !important;
+    height: 400px !important;
+    padding-bottom: 20px;
+    /*transform: rotate(-90deg);*/
+    }
+    }
+    @media only screen and (min-width: 1024px){
+    /*TerceraPagina*/
+    .chartCssLeft {
+    font-size: 40px;
+    width: 100%;
+    height:100%;
+    padding-left: 30px;
+    padding-top: 100px;
+    }
+    #numberMundos{
+    width: 950px !important;
+    height: 500px !important;
+    /*transform: rotate(-90deg);*/
+    }
+    .titleName{
+    font-size: 40px;
+    margin-left:200px;
+    width: 300px;
+    padding-left: 340px;
+    padding-bottom: 30px;
+    }
+    .chartCss { 
+    padding: 5px;
+    padding-right: 0px !important;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    }
+    #topFive{
+    width: 950px !important;
+    height: 500px !important;
+    padding-bottom: 20px;
+    /*transform: rotate(-90deg);*/
+    }
+    }
+    @media only screen and (min-width:2560px){
+    /*TerceraPagina*/
+    .chartCssLeft {
+    font-size: 40px;
+    width: 100%;
+    height:100%;
+    padding-left: 30px;
+    padding-top: 200px;
+    }
+    #numberMundos{
+    width: 2400px !important;
+    height: 1200px !important;
+    /*transform: rotate(-90deg);*/
+    }
+    .titleName{
+    font-size: 40px;
+    margin-left:200px;
+    width: 300px;
+    padding-left: 600px;
+    padding-bottom: 30px;
+    }
+    .chartCss { 
+    padding: 5px;
+    padding-right: 0px !important;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    }
+    #topFive{
+    width: 2400px !important;
+    height: 1200px !important;
+    padding-bottom: 20px;
+    /*transform: rotate(-90deg);*/
+    }
+    }
+    @media only screen and (min-width:1440px){
+    /*TerceraPagina*/
+    .chartCssLeft {
+    font-size: 40px;
+    width: 100%;
+    height:100%;
+    padding-left: 30px;
+    padding-top: 200px;
+    }
+    #numberMundos{
+    width: 1400px !important;
+    height:800px !important;
+    /*transform: rotate(-90deg);*/
+    }
+    .titleName{
+    font-size: 40px;
+    margin-left:200px;
+    width: 300px;
+    padding-left: 500px;
+    padding-bottom: 30px;
+    }
+    .chartCss { 
+    padding: 5px;
+    padding-right: 0px !important;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    }
+    #topFive{
+    width: 1400px !important;
+    height: 800px !important;
+    padding-bottom: 20px;
+    /*transform: rotate(-90deg);*/
+    }
+    }
+    @media only screen and (max-width: 1024px) and (min-width:768px){
+    .background-header {
+    height: 100px; 
+    }
+    .nav li a {
+    margin-left: -20px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-decoration:none;
+    border-radius: 30px;
+    }
+    .nav li ul {
+    margin-left: 70px;
+    min-width:90px;
+    }
+    .nav li ul li {
+    margin-left: 50px;
+    }
+    .nav li ul li ul {
+    left: 250px;
+    }
+    .logo {
+    width: 70%;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    }
+    .home{
+    margin-right: 10px;
+    }
+    .characters{
+    margin-right: 0px;
+    }
+    .containerModal{
+    width: 70%;
+    height: 18%;
+    padding: 20px 20px;
+    border-radius: 15px;
+    top: 60px;
+    }
+    .containerModal label {
+    top: -10px;
+    right: -200px;
+    color: black;
+    font-size: 30px;
+    cursor:pointer;
+    }
+    .contenido h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px; 
+    }
+    .funFactsButton {
+    top: 180px;
+    }
+    .fixingGif {
+    width: 70%;
+    height: 450px; 
+    padding-top: 80px;
+    padding-bottom: 70px;
+    }
+    .buttonCss {
+    font-size: 15px;
+    }
+    /*SegundaPAgina*/
+    #titulo{
+    position:relative
+    }
+    .search-form{
+    padding-top: 60px;
+    }
+    #textBuscar {
+    width: 20%;
+    height: 40px;
+    }
+    .tituloOne {
+    margin: 10px 10px;
+    font-size: 55px;
+    }
+    .imgSize{
+    width: 150px;
+    height: 150px;
+    }
+    .cardContainer{
+    margin-top: 60px;
+    padding-top: 60px;
+    }
+    .card {
+    background-color: #3af7f7;
+    width: 200px;
+    height: 280px;
+    border: 3px rgb(250, 84, 8);
+    border-style: double;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Reggae One;
+    color: rgb(7, 3, 20);
+    font-size: 14px;
+    }
+    }
+    @media only screen and (max-width: 2560px) and (min-width:1440px){
+    .background-header {
+    height: 180px; 
+    }
+    .nav li a {
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 60px;
+    text-decoration:none;
+    border-radius: 30px;
+    }
+    .nav li ul {
+    margin-left: 70px;
+    min-width:90px;
+    }
+    .nav li ul li {
+    margin-left: 50px;
+    }
+    .nav li ul li ul {
+    left: 250px;
+    }
+    .logo {
+    width: 80%;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    }
+    .home{
+    margin-right: 10px;
+    }
+    .characters{
+    margin-right: 0px;
+    }
+    .containerModal{
+    width: 70%;
+    height: 18%;
+    padding: 20px 20px;
+    border-radius: 15px;
+    top: 60px;
+    }
+    .containerModal label {
+    top: -10px;
+    right: -200px;
+    color: black;
+    font-size: 30px;
+    cursor:pointer;
+    }
+    .contenido h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px; 
+    }
+    .funFactsButton {
+    top: 180px;
+    }
+    .fixingGif {
+    width: 70%;
+    height: 1100px;
+    padding-top: 150px;
+    padding-bottom: 80px;
+    }
+    .buttonCss {
+    font-size: 70px;
+    }
+    /*SegundaPAgina*/
+    #titulo{
+    position:relative
+    }
+    .search-form{
+    padding-top: 60px;
+    }
+    #textBuscar {
+    width: 50%;
+    height: 40px;
+    }
+    .tituloOne {
+    margin: 10px 10px;
+    font-size: 55px;
+    }
+    .imgSize{
+    width: 220px;
+    height: 220px;
+    }
+    .cardContainer{
+    margin-top: 60px;
+    padding-top: 60px;
+    }
+    .card {
+    background-color: #3af7f7;
+    width: 330px;
+    height: 390px;
+    border: 3px rgb(222, 10, 250);
+    border-style: double;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Reggae One;
+    color: rgb(7, 3, 20);
+    font-size: 20px;
+    }
+    }
